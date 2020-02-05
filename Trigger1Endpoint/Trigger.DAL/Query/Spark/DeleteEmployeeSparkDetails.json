@@ -1,0 +1,23 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "SparkId",
+      "dataType": "int"
+    },
+    {
+      "key": "EmpId",
+      "dataType": "int"
+    },
+    {
+      "key": "UpdatedBy",
+      "dataType": "int"
+    },
+    {
+      "key": "Result",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Output"
+    }
+  ]
+}

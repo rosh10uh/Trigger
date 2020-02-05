@@ -1,0 +1,1741 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Trigger</name>
+    </assembly>
+    <members>
+        <member name="T:Trigger.Controllers.V1.ActionPermissionController">
+            <summary>
+            Class Name   :   ActionPermissionController
+            Author       :   Vivek Bhavsar
+            Creation Date:   11 June 2019
+            Purpose      :   Controller for Dimension and Actionwise Permission Configurations
+            Revision     :  
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.ActionPermissionController.#ctor(Trigger.BLL.DimensionMatrix.ActionwisePermission)">
+            <summary>
+            Constructor for Dimension Elements Controller
+            </summary>
+            <param name="actionwisePermission"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.ActionPermissionController.Get">
+            <summary>
+            Get Configuration Details of Dimension and Actionwise permission
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.ActionPermissionController.PostAsync(System.Collections.Generic.List{Trigger.DTO.DimensionMatrix.ActionwisePermissionModel})">
+            <summary>
+            Configuration of Dimensionwise Action Permission
+            </summary>
+            <param name="actionwisePermissionModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.ActionPermissionController.GetAllActionsAsync">
+            <summary>
+            Get list of actions from Action Master
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.ActionPermissionController.CheckWithExistingActionPermission(System.Int32,System.Collections.Generic.List{Trigger.DTO.DimensionMatrix.ActionList})">
+            <summary>
+            Api to check permission with existing permission
+            </summary>
+            <param name="empId"></param>
+            <param name="existingPermissionModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.AssessmentController">
+            <summary>
+            Contains API's for Assessment Module
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.AssessmentController.#ctor(Trigger.BLL.Assessment.Assessment)">
+            <summary>
+            Assessment Constructor
+            </summary>
+            <param name="assessment"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.AssessmentController.Get(System.Int32,System.Int32)">
+            <summary>
+            Method to get Assessment Score
+            </summary>
+            <param name="companyId"></param>
+            <param name="empId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.AssessmentController.PostAsync(Trigger.DTO.EmpAssessmentModel)">
+            <summary>
+            POST api/values 
+            Method to Save Assessment Details
+            </summary>
+            <param name="empAssessmentModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.AssessmentController.DeleteDocumentAsync(Trigger.DTO.EmpAssessmentDet)">
+            <summary>
+            Delete assessment attachment for comment and remove document name from assessment details
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.AssessmentController.UpdateAssessmentCommentAsync(Trigger.DTO.EmpAssessmentDet)">
+            <summary>
+            Update assessment general and categorywise comments
+            </summary>
+            <param name="empAssessmentDet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.AssessmentController.DeleteAssessmentCommentAsync(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            API to delete assessment comment including attachment with that comment for remark category
+            </summary>
+            <param name="assessmentId"></param>
+            <param name="remarkId"></param>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Trigger.Controllers.V1.AssessmentController.UpdateAssessmentScoreFeedback(Trigger.DTO.AssessmentScoreModel)" -->
+        <member name="T:Trigger.Controllers.V1.AssessmentYearController">
+            <summary>
+            Contains API for Yearwise Assessment for Dashboard
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.AssessmentYearController.#ctor(Trigger.BLL.AssessmentYear.AssessmentYear)">
+            <summary>
+            Yearwise Assessment Module
+            </summary>
+            <param name="assessmentYear"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.AssessmentYearController.Get(System.Int32,System.Int32)">
+            <summary>
+            Get Yearwise Assessment for Dashboard
+            </summary>
+            <param name="companyId"></param>
+            <param name="managerId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.ChangePasswordController">
+            <summary>
+            Contains API's for Change Password Module
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.ChangePasswordController.#ctor(Trigger.BLL.ChangePassword.ChangePassword)">
+            <summary>
+            Constructor for Change Password
+            </summary>
+            <param name="changePassword"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.ChangePasswordController.PostAsync(Trigger.DTO.UserChangePassword)">
+            <summary>
+            For changing existing password
+            </summary>
+            <param name="userChangePassword"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.ClassificationController">
+            <summary>
+            Class Name   :   ClassificationController
+            Author       :   Vivek Bhavsar
+            Creation Date:   08 Aug 2019
+            Purpose      :   Controller for Classification
+            Revision     :  
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.ClassificationController.#ctor(Trigger.BLL.Spark.Classification)">
+            <summary>
+            Constructor to initialized BLL object for classification
+            </summary>
+            <param name="classification"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.ClassificationController.Get">
+            <summary>
+            API to get list of classifications from master table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.CompanyController">
+            <summary>
+            API's for new Client Creation
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.CompanyController.#ctor(Trigger.BLL.Company.Company)">
+            <summary>
+            Company Constructor
+            </summary>
+            <param name="company"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.CompanyController.Get">
+            <summary>
+            Get list of All Companies(Clients)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.CompanyController.Get(System.Int32)">
+            <summary>
+            Get Company Details by CompanyId
+            </summary>
+            <param name="compId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.CompanyController.Post(System.Int32,Trigger.DTO.CompanyDetailsModel)">
+            <summary>
+            POST: api/Company/userId
+            Save Company Details
+            </summary>
+            <param name="userId"></param>
+            <param name="companyDetailsModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.CompanyController.Put(System.Int32,Trigger.DTO.CompanyDetailsModel)">
+            <summary>
+             PUT: api/Company/5
+             Update Company Details
+            </summary>
+            <param name="id"></param>
+            <param name="companyDetailsModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.CompanyController.Delete(System.String,System.Int32)">
+            <summary>
+            DELETE: api/Company/5
+            Delete Company Details(Soft Delete)
+            </summary>
+            <param name="companyId"></param>
+            <param name="updatedBy"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.CompanyController.AddInactivityScheduler">
+            <summary>
+            API for scheduling Inactivity Reminder Scheduler
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.CompanyController.AddTeamNotiifcationScheduler">
+            <summary>
+            API for scheduling Team notification
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.ContactUsController">
+            <summary>
+            Class Name      :   ContactUsController
+            Author          :   Mayur Patel
+            Creation Date   :   04 Jun 2019
+            Purpose         :   API to Send support email to support team
+            Revision        :   
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.ContactUsController.#ctor(Trigger.BLL.ContactUs.ContactUs)">
+            <summary>
+            Name            :   ContactUsController
+            Author          :    Mayur Patel
+            Creation Date   :   04 Jun 2019
+            Purpose         :   constructor for ContactUsController
+            Revision        :   
+            </summary>
+            <param name="contactUs"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.ContactUsController.post(Trigger.DTO.ContactDetails)">
+            <summary>
+            This API is used to send support email to support team
+            Require Parameters :Full Name, Email, Subject,Comments
+            </summary>
+            <param name="contactDetails"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.CountryController">
+            <summary>
+            API's for Country Master
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.CountryController.#ctor(Trigger.BLL.Country.Country)">
+            <summary>
+            Country Constructor
+            </summary>
+            <param name="country"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.CountryController.Get">
+            <summary>
+            Get List of Countries from Master
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.DashboardController">
+            <summary>
+            API's for Dashboard
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.DashboardController.#ctor(Trigger.BLL.Dashboard.Dashboard)">
+            <summary>
+            Costructor for Dashboard
+            </summary>
+            <param name="dashboard"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.DashboardController.Get(System.Int32)">
+            <summary>
+            Method to get Employee Dashboard by EmpId
+            </summary>
+            <param name="empId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.DashboardController.Get(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            Get Yearwise Manager Dashboard by Comany and Managerid
+            </summary>
+            <param name="companyId"></param>
+            <param name="managerId"></param>
+            <param name="yearId"></param>
+            <param name="departmentList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.DashboardController.GetDashboard(System.Int32,System.Int32)">
+            <summary>
+            UnUsed API to respond with app version upgrade message for mobile apps
+            </summary>
+            <param name="companyId"></param>
+            <param name="managerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.DashboardController.GetDashboard(System.Int32,System.Int32,System.String)">
+            <summary>
+            UnUsed API to resond with app version upgrade message for mobile apps
+            </summary>
+            <param name="companyId"></param>
+            <param name="managerId"></param>
+            <param name="departmentList"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.DepartmentController">
+            <summary>
+            API's for Department
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.DepartmentController.#ctor(Trigger.BLL.Department.Department)">
+            <summary>
+            Constructor for Department
+            </summary>
+            <param name="department"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.DepartmentController.Get">
+            <summary>
+            Get List of all Departments
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.DepartmentController.GetCompanyAndYearwiseDepartments(System.Int32,System.String)">
+            <summary>
+            Get Company and Year wise Departments
+            </summary>
+            <param name="companyId"></param>
+            <param name="yearId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.DepartmentController.GetCompanywiseDepartments(System.Int32)">
+            <summary>
+            Get Company wise Departments
+            </summary>
+            <param name="companyId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.DepartmentController.PostAsync(Trigger.DTO.DepartmentModel)">
+            <summary>
+            Add New Department
+            </summary>
+            <param name="departmentModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.DepartmentController.PutAsync(Trigger.DTO.DepartmentModel)">
+            <summary>
+            Update Existing Deparment
+            </summary>
+            <param name="departmentModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.DepartmentController.DeleteAsync(System.Int32,System.Int32,System.String)">
+            <summary>
+            Delete Department
+            </summary>
+            <param name="companyId"></param>
+            <param name="departmentId"></param>
+            <param name="updatedBy"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.DimensionController">
+            <summary>
+            Class Name   :   DimensionController
+            Author       :   Vivek Bhavsar
+            Creation Date:   07 June 2019
+            Purpose      :   Controller for Dimension
+            Revision     :  
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.DimensionController.#ctor(Trigger.BLL.DimensionMatrix.Dimension)">
+            <summary>
+            Constructor for Dimension Controller
+            </summary>
+            <param name="dimension"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.DimensionController.Get">
+            <summary>
+            Get List of all Dimension Types
+            </summary>
+            <returns>returns list of Dimensions</returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.DimensionController.PostAsync(Trigger.DTO.DimensionMatrix.DimensionModel)">
+            <summary>
+            Add new Dimensions
+            </summary>
+            <param name="dimensionModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.DimensionController.PutAsync(Trigger.DTO.DimensionMatrix.DimensionModel)">
+            <summary>
+            Update Existing Dimensions
+            </summary>
+            <param name="dimensionModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.DimensionElementsController">
+            <summary>
+            Class Name   :   DimensionElementsController
+            Author       :   Vivek Bhavsar
+            Creation Date:   10 June 2019
+            Purpose      :   Controller for Dimension Elements(Values)
+            Revision     :  
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.DimensionElementsController.#ctor(Trigger.BLL.DimensionMatrix.DimensionElements)">
+            <summary>
+            Constructor for Dimension Elements Controller
+            </summary>
+            <param name="dimensionElements"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.DimensionElementsController.Get">
+            <summary>
+            Get List of values for all Dimension Types
+            </summary>
+            <returns>returns list of values for all Dimension</returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.DimensionElementsController.PostAsync(Trigger.DTO.DimensionMatrix.DimensionElementsModel)">
+            <summary>
+            Add new Dimension Element Values
+            </summary>
+            <param name="dimensionElementsModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.DimensionElementsController.PutAsync(Trigger.DTO.DimensionMatrix.DimensionElementsModel)">
+            <summary>
+            Update Existing Dimension Element Values
+            </summary>
+            <param name="dimensionElementsModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.DimensionElementsController.DeleteAsync(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Delete Existing Dimension Element
+            </summary>
+            <param name="companyId"></param>
+            <param name="dimensionId"></param>
+            <param name="dimensionValueId"></param>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.EmployeeController">
+            <summary>
+            controller to perform action for employee
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.#ctor(Trigger.BLL.Employee.Employee)">
+            <summary>
+            employee constructor 
+            </summary>
+            <param name="employee"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.GetEmployeeById(System.Int32)">
+            <summary>
+            Get employee details by given empId
+            </summary>
+            <param name="empid">Pass EmpId for getting details </param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.GetEmployeeByIdForEditProfile(System.Int32)">
+            <summary>
+            Get employee details by given empId for edit profile
+            </summary>
+            <param name="empid">Pass EmpId for getting details </param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.GetEmployeeByIdWithCompanyId(System.Int32,System.Int32)">
+            <summary>
+            Get companywise employee details by passing companyId, empId
+            </summary>
+            <param name="companyId">Pass companyId of employee from the company he/she belongs</param>
+            <param name="empid">Pass empId of employee to get details</param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.GetCompanyAdimnById(System.Int32,System.Int32)">
+            <summary>
+            Get company admin details by the Id
+            </summary>
+            <param name="companyId">Pass companyId of employee from the company he/she belongs</param>
+            <param name="empid">Pass empId of employee to get details</param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.Get(System.Int32,System.Int32)">
+            <summary>
+            Get all employees details as per reporting person's Id
+            </summary>
+            <param name="companyId">Pass companyId of employee from the company he/she belongs</param>
+            <param name="managerId">Logged in empId</param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.GetAllManager(System.Int32)">
+            <summary>
+            Get all employees of the company whose roles are Admin, Executive or Manager
+            </summary>
+            <param name="companyId">Pass companyId</param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.GetAllManagers_SD(System.Int32,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            Api to get all employees with pagination when trigger admin redirect to perticular company
+            </summary>
+            <param name="companyId"></param>
+            <param name="pagenumber"></param>
+            <param name="pagesize"></param>
+            <param name="searchstring"></param>
+            <param name="departmentlist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.GetAllEmployee_SD(System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            Api to get all employees with pagination for employee listing page
+            </summary>
+            <param name="companyId"></param>
+            <param name="managerId"></param>
+            <param name="pagenumber"></param>
+            <param name="pagesize"></param>
+            <param name="searchstring"></param>
+            <param name="departmentlist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.GetAllEmployeesWithPaginationYearWise(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String)">
+            api/dashboardemployees/{yearid}/{companyid}/{managerid}/{pagenumber}/{pagesize}/{searchstring}/{departmentlist}
+             <summary>
+             Api to get year wise employee list when redirecting from employee count 
+             </summary>
+             <param name="Yearid"></param>
+             <param name="companyId"></param>
+             <param name="managerId"></param>
+             <param name="pagenumber"></param>
+             <param name="pagesize"></param>
+             <param name="searchstring"></param>
+             <param name="departmentlist"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.GetEmployeeByGradeWithPagination(System.Int32,System.Int32,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String)">
+            api/dashboardemployees/{yearid}/{companyid}/{managerid}/{grade}/{pagenumber}/{pagesize}/{searchstring}/{departmentlist}
+             <summary>
+             Api to get year wise and grade wise employee list with pagination when redirecting from progressive or pie graph
+             </summary>
+             <param name="Yearid"></param>
+             <param name="companyId"></param>
+             <param name="managerId"></param>
+             <param name="grade"></param>
+             <param name="pagenumber"></param>
+             <param name="pagesize"></param>
+             <param name="searchstring"></param>
+             <param name="departmentlist"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.GetEmployeeByGradeAndMonthWithPagination(System.Int32,System.Int32,System.Int32,System.String,System.String,System.Int32,System.Int32,System.String,System.String)">
+            api/dashboardemployees/{yearid}/{companyid}/{managerid}/{month}/{grade}/{pagenumber}/{pagesize}/{searchstring}/{departmentlist}
+             <summary>
+             Api to get year wise, month wise  and grade wise employee list with pagination when redirecting from bar graph
+             </summary>
+             <param name="Yearid"></param>
+             <param name="companyId"></param>
+             <param name="managerId"></param>
+             <param name="month"></param>
+             <param name="grade"></param>
+             <param name="pagenumber"></param>
+             <param name="pagesize"></param>
+             <param name="searchstring"></param>
+             <param name="departmentlist"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.Post(System.Int32,Trigger.DTO.EmployeeModel)">
+            <summary>
+            Api to add employee(Admin/Executive/Manager/NonManager)
+            </summary>
+            <param name="userid"></param>
+            <param name="employee"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.Put(System.Int32,Trigger.DTO.EmployeeModel)">
+            <summary>
+            Api to update employee
+            </summary>
+            <param name="userid"></param>
+            <param name="employee"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.EditProfile(System.Int32,Trigger.DTO.EmployeeProfile)">
+            <summary>
+            Api to edit profile of logged in employee
+            </summary>
+            <param name="userid"></param>
+            <param name="employee"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.AllowSms(System.Int32,Trigger.DTO.EmployeeProfile)">
+            <summary>
+            Api to allow sms service for inactivity notification of manager
+            </summary>
+            <param name="userid"></param>
+            <param name="employee"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.Delete(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Api to delete employee
+            </summary>
+            <param name="companyId"></param>
+            <param name="empId"></param>
+            <param name="updatedBy"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.ChangeProfile(System.Int32,Trigger.DTO.EmpProfile)">
+            <summary>
+            Api to change profile pic for logged in employee
+            </summary>
+            <param name="userid"></param>
+            <param name="empProfile"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.EmployeeSendMail(System.Int32,Trigger.DTO.EmployeeModel)">
+            <summary>
+            Api to send mail for user registration or updatation from employee listing page
+            </summary>
+            <param name="userId"></param>
+            <param name="employee"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.GetEmployeeByGrade(System.Int32,System.Int32,System.String)">
+            <summary>
+            unsed API to resond with app version upgrade message for mobile apps
+            Api to get manager wise grade wise employee list 
+            </summary>
+            <param name="companyId"></param>
+            <param name="managerId"></param>
+            <param name="grade"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.GetEmployeeByGradeAndMonth(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            UnUsed API to resond with app version upgrade message for mobile apps
+             Api to get manager wise month wise and grade wise employee list 
+            </summary>
+            <param name="companyId"></param>
+            <param name="managerId"></param>
+            <param name="month"></param>
+            <param name="grade"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.GetEmployeeByGradeWithPagination(System.Int32,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            UnUsed API to resond with app version upgrade message for mobile apps
+             Api to get department wise, manager wise grade wise employee list 
+            </summary>
+            <param name="companyId"></param>
+            <param name="managerId"></param>
+            <param name="grade"></param>
+            <param name="pagenumber"></param>
+            <param name="pagesize"></param>
+            <param name="searchstring"></param>
+            <param name="departmentlist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.GetEmployeeByGradeAndMonthWithPagination(System.Int32,System.Int32,System.String,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            UnUsed API to resond with app version upgrade message for mobile apps
+            Api to get department wise, manager wise month wise and grade wise employee list 
+            </summary>
+            <param name="companyId"></param>
+            <param name="managerId"></param>
+            <param name="grade"></param>
+            <param name="pagenumber"></param>
+            <param name="pagesize"></param>
+            <param name="searchstring"></param>
+            <param name="departmentlist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.ChangeEmpSalary(System.Int32,Trigger.DTO.EmployeeSalary)">
+            <summary>
+            Api to change employee's current salary.Only Manager have this rights only.
+            </summary>
+            <param name="userid">userId of logged in manager</param>
+            <param name="empSalary">Employee Salary object which has required fields.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.GetAllEmployees(System.Int32,System.Int32,System.String)">
+            <summary>
+            Api to get list of employees without pagination
+            </summary>
+            <param name="companyId"></param>
+            <param name="managerId"></param>
+            <param name="departmentlist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.GetAllEmployeesListForTriggerAdmin(System.Int32,System.String)">
+            <summary>
+            Api to Get all employees list for Trigger admin when redirect to perticular client
+            </summary>
+            <param name="companyId"></param>
+            <param name="departmentlist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.GetEmployeeByGradeWithoutPagination(System.Int32,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            Api to get year and grade wise employees when redirect from progressive/pie chart
+            </summary>
+            <param name="yearId"></param>
+            <param name="companyId"></param>
+            <param name="managerId"></param>
+            <param name="grade"></param>
+            <param name="departmentlist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.GetAllEmployeesWithoutPaginationYearWise(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            Api to get year wise employees when redirect from direct and organization count
+            </summary>
+            <param name="yearId"></param>
+            <param name="companyId"></param>
+            <param name="managerId"></param>
+            <param name="departmentlist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.GetEmployeeByGradeAndMonthWithoutPagination(System.Int32,System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Api to get year wise employees when redirect from direct and organization bar graph
+            </summary>
+            <param name="yearId"></param>
+            <param name="companyId"></param>
+            <param name="managerId"></param>
+            <param name="month"></param>
+            <param name="grade"></param>
+            <param name="departmentlist"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.GetTriggerEmpList(System.Int32,System.Int32)">
+            <summary>
+            Api to get employee list for Trigger employee 
+            </summary>
+            <param name="companyId"></param>
+            <param name="managerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.GetDashboardEmpList(System.Int32,System.Int32)">
+            <summary>
+            Api to get employee list for Employee Dashboard
+            </summary>
+            <param name="companyId"></param>
+            <param name="managerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.GetNonManagersList(System.Int32)">
+            <summary>
+            Api to get all non manager list
+            </summary>
+            <param name="companyId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.GetActiveManagerList(System.Int32)">
+            <summary>
+            Get all employees of the company whose roles are Admin, Executive or Manager and they are generate password
+            Api to get all login user 
+            Used : Userd in team creation
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeController.GetFilterEmployeeList(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+             Get employee list for employee list page with pagination including dimension(Department/Relation/Team) filters
+            </summary>
+            <param name="companyId"></param>
+            <param name="managerId"></param>
+            <param name="dimensionType"></param>
+            <param name="dimensionValues"></param>
+            <param name="pagenumber"></param>
+            <param name="pagesize"></param>
+            <param name="departmentlist"></param>
+            <param name="searchstring"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.EmployeeSparkController">
+            <summary>
+            Class Name   :   EmployeeSparkController
+            Author       :   Vivek Bhavsar
+            Creation Date:   16 Aug 2019
+            Purpose      :   Controller to perform Employee Spark
+            Revision     :  
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeSparkController.#ctor(Trigger.BLL.Spark.EmployeeSpark)">
+            <summary>
+            constructor to initialized employeespark object
+            </summary>
+            <param name="employeeSpark"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeSparkController.Get(System.Int32)">
+            <summary>
+            Method to get list of sparks for an employee
+            </summary>
+            <param name="empId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeSparkController.GetUnApprovedSpark">
+            <summary>
+            Method to get list of sparks for an employee
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeSparkController.UpdateSparkApprovalStatus(Trigger.DTO.Spark.EmployeeSparkModel)">
+            <summary>
+            API to approve or reject spark performed by sms
+            </summary>
+            <param name="employeeSparkModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeSparkController.PostAsync(Trigger.DTO.Spark.EmployeeSparkModel)">
+            <summary>
+            API to spark an employee with document attachment
+            </summary>
+            <param name="employeeSparkModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeSparkController.PutAsync(Trigger.DTO.Spark.EmployeeSparkModel)">
+            <summary>
+            API to update spark of an employee including document attachment
+            </summary>
+            <param name="employeeSparkModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeSparkController.DeleteAsync(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            API to delete spark of an employee
+            </summary>
+            <param name="empId"></param>
+            <param name="sparkId"></param>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeSparkController.DeleteAttachmentAsync(Trigger.DTO.Spark.EmployeeSparkModel)">
+            <summary>
+            API to delete attachment of spark for an employee
+            </summary>
+            <param name="employeeSparkModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.EmployeeSparkSmsController">
+            <summary>
+            Controller to call api from Twilio account on sms received to Twilio phone number
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeSparkSmsController.#ctor(Trigger.BLL.Spark.EmployeeSparkSms)">
+            <summary>
+            Constructor to initialized BLL object for sparksms
+            </summary>
+            <param name="employeeSparkSms"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EmployeeSparkSmsController.PostAsync(Twilio.AspNet.Common.SmsRequest)">
+            <summary>
+            API to receive sms from twilio on for spark an employee
+            </summary>
+            <param name="smsRequest"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.EthnicityController">
+            <summary>
+            API's for Ethnicity
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EthnicityController.#ctor(Trigger.BLL.Ethnicity.Ethnicity)">
+            <summary>
+            Constructor for Ethnicity
+            </summary>
+            <param name="ethnicity"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.EthnicityController.Get">
+            <summary>
+            Get list of Ethnicity from Master
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.ExcelUploadController">
+            <summary>
+            API's for Excel Upload Module(Part of Employee Module)
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.ExcelUploadController.#ctor(Trigger.BLL.ExcelUpload.ExcelUpload)">
+            <summary>
+            Constructor for Excel Upload
+            </summary>
+            <param name="excelUpload"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.ExcelUploadController.Get(System.Int32)">
+            <summary>
+            Create excel template for and return excel file path
+            </summary>
+            <param name="companyId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.ExcelUploadController.Post(System.String,System.Collections.Generic.List{Trigger.DTO.CsvEmployeesModel})">
+            <summary>
+            POST: api/ExcelUpload
+            Compare excel and database data
+            </summary>
+            <param name="companyId"></param>
+            <param name="employees"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.ExcelUploadController.PostExcel(System.String,System.Collections.Generic.List{Trigger.DTO.CsvEmployeesModel})">
+            <summary>
+            Upload Excel for Employees
+            </summary>
+            <param name="companyId"></param>
+            <param name="employees"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.IndustryTypeController">
+            <summary>
+            API for Industry Type
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.IndustryTypeController.#ctor(Trigger.BLL.IndustryType.IndustryType)">
+            <summary>
+            Constructor for IndustryType
+            </summary>
+            <param name="industryType"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.IndustryTypeController.Get">
+            <summary>
+            Get list of Industry Types
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.LoginController">
+            <summary>
+            API's for Login Module
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.LoginController.#ctor(Trigger.BLL.Login.Login)">
+            <summary>
+            Constructor for Login
+            </summary>
+            <param name="login"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.LoginController.PostAsync(Trigger.DTO.UserLoginModel)">
+            <summary>
+            Check for User and Response with user details
+            </summary>
+            <param name="userLoginModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.LogoutController">
+            <summary>
+            API for Logout from Mobile Application
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.LogoutController.#ctor(Trigger.BLL.Login.Login)">
+            <summary>
+            Logout Constructor
+            </summary>
+            <param name="login"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.LogoutController.DeleteAsync(System.String)">
+            <summary>
+            API to Delete device info on Logout
+            </summary>
+            <param name="deviceId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.NotificationController">
+            <summary>
+            API's for Notification
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.NotificationController.#ctor(Trigger.BLL.Notification.Notification)">
+            <summary>
+            Constructor for Notificaiton
+            </summary>
+            <param name="notification"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.NotificationController.Get(System.Int32)">
+            <summary>
+            Get list of all Notifications for manager
+            </summary>
+            <param name="managerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.NotificationController.PutAsync(System.String)">
+            <summary>
+            Update Notification Status as Read on user's action on notification
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.OrganizationTypeController">
+            <summary>
+            API for Organization Type
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.OrganizationTypeController.#ctor(Trigger.BLL.OrganizationType.OrganizationType)">
+            <summary>
+             Constructor for OrganizationType
+            </summary>
+            <param name="organizationType"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.OrganizationTypeController.Get">
+            <summary>
+            Get list of Organization Types
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.QuestionnariesController">
+            <summary>
+            API for Questionnaries
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.QuestionnariesController.#ctor(Trigger.BLL.Questionnaries.Questionnaries)">
+            <summary>
+            Constructor for Questionaries
+            </summary>
+            <param name="questionnaires"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.QuestionnariesController.Get">
+            <summary>
+            Get List of all Questions and Answers for Assessment Page
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.QuestionnariesController.GetAllCategories(System.Int32)">
+            <summary>
+            Get List of all Categories from master
+            </summary>
+            <param name="companyId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.QuestionnariesController.GetScoreRank">
+            <summary>
+            To get score ranks from score remarks master
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.RegionController">
+            <summary>
+            API for Region
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.RegionController.#ctor(Trigger.BLL.Region.Region)">
+            <summary>
+            Constructor for Region
+            </summary>
+            <param name="region"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.RegionController.Get">
+            <summary>
+            Get list of Regions from Master
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.RoleController">
+            <summary>
+            API for Role
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.RoleController.#ctor(Trigger.BLL.Role.Role)">
+            <summary>
+            Constructor for Role Master
+            </summary>
+            <param name="role"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.RoleController.Get(System.Int32)">
+            <summary>
+            Get List of Trigger Roles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.SmsServiceController">
+            <summary>
+            Class Name      :   SmsServiceController
+            Author          :   Vivek Bhavsar
+            Creation Date   :   22 Apr 2019
+            Purpose         :   API to generate and send verification code to user
+            Revision        :   
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.SmsServiceController.#ctor(Trigger.BLL.SmsService.SmsVerificationCode)">
+            <summary>
+            Name            :   SmsVerificationCode
+            Author          :   Vivek Bhavsar
+            Creation Date   :   24 Apr 2019
+            Purpose         :   constructor for SmsServiceController
+            Revision        :   
+            </summary>
+            <param name="smsVerificationCode"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.SmsServiceController.SendSMSVerificationCode(Trigger.DTO.SmsService.SmsVerificationCode)">
+            <summary>
+            This API is used to Generate and Send verification code to user on his registered mobile number
+            Require Parameters : Email,EmpId,PhoneNumber,CreatedBy
+            This API will perform 3 steps : 
+            1.Generate verification code with 6 digits
+            2.Store verification code into database for verification use
+            3.Send verification code to registered mobile number
+            </summary>
+            <param name="smsVerificationCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.SmsServiceController.VerifySmsVerificationCode(Trigger.DTO.SmsService.SmsVerificationCode)">
+            <summary>
+            This API is used to verify sms verification code entered by user
+            Require Parameters : Email,EmpId,VerificationCode,UpdatedBy
+            verification code will verify in two ways :
+            1.verification code matched with code in database -
+            2.Validity of verification code will check e.g. valid for 2 minutes
+            </summary>
+            <param name="smsVerificationCode"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.TeamConfigurationController">
+            <summary>
+            Class Name   :   TeamConfiguration
+            Author       :   Bhumika Bhavsar
+            Creation Date:   26 August 2019
+            Purpose      :   Controller for Team wise action permission Configurations
+            Revision     :  
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.TeamConfigurationController.#ctor(Trigger.BLL.TeamConfiguration.TeamConfiguration)">
+            <summary>
+            Constructor for team configuration
+            </summary>
+            <param name="teamConfiguration"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.TeamConfigurationController.Get">
+            <summary>
+            API To get all Teams details
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.TeamConfigurationController.GetTeamDetailsById(System.Int32)">
+            <summary>
+            Api to get details of team by teamId
+            </summary>
+            <param name="teamId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.TeamConfigurationController.TeamConfigurationAsync(Trigger.DTO.TeamConfiguration.TeamConfigurationModel)">
+            <summary>
+            Api to add Team configuration
+            </summary>
+            <param name="teamConfiguration"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.TeamConfigurationController.UpdateTeamConfigurationAsync(Trigger.DTO.TeamConfiguration.TeamConfigurationModel)">
+            <summary>
+            Api to update Team configuration
+            </summary>
+            <param name="teamConfiguration"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.TeamConfigurationController.SetTeamAsInActiveAsync(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Api to Inactive Team configuration
+            </summary>
+            <param name="companyId"></param>
+            <param name="teamId"></param>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.TeamDashboardController">
+            <summary>
+            API's for Team Dashboard
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.TeamDashboardController.#ctor(Trigger.BLL.Dashboard.TeamDashboard)">
+            <summary>
+            Costructor for Team Dashboard
+            </summary>
+            <param name="teamDashboard"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.TeamDashboardController.GetYearWiseTeamList(System.Int32)">
+            <summary>
+            Api to get team list as per year selection
+            </summary>
+            <param name="yearId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.TeamDashboardController.GetTeamDashboard(System.Int32,System.Int32)">
+            <summary>
+            Api to get team dashboard
+            </summary>
+            <param name="yearId"></param>
+            <param name="teamId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.TeamDashboardController.Get(System.Int32)">
+            <summary>
+            Get Year wise Assessment for Team Dashboard
+            </summary>
+            <param name="companyId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V1.WidgetController">
+            <summary>
+            API's for Widget Master for Dashboards
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V1.WidgetController.#ctor(Trigger.BLL.Widget.Widget)">
+            <summary>
+            Constructor for Widget
+            </summary>
+            <param name="widget"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V1.WidgetController.Get(System.Int32,System.Int32)">
+            <summary>
+            Get Widget Details by UserId
+            </summary>
+            <param name="widgetType"></param>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V1.WidgetController.Post(System.Collections.Generic.List{Trigger.DTO.WidgetLibrary})">
+            <summary>
+            Save Widget Positions for Dashboard (Userwise)
+            </summary>
+            <param name="widgetLibrary"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V2_1.ActionPermissionController">
+            <summary>
+            Class Name   :   ActionPermissionController
+            Author       :   Vivek Bhavsar
+            Creation Date:   11 June 2019
+            Purpose      :   Controller for Dimension and Actionwise Permission Configurations
+            Revision     :  
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V2_1.ActionPermissionController.#ctor(Trigger.BLL.DimensionMatrix.ActionwisePermission)">
+            <summary>
+            Constructor for Dimension Elements Controller
+            </summary>
+            <param name="actionwisePermission"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V2_1.ActionPermissionController.CheckWithExistingActionPermission(System.Int32,System.Collections.Generic.List{Trigger.DTO.DimensionMatrix.ActionList})">
+            <summary>
+            Version 2 : Api to check permission with existing permission
+            </summary>
+            <param name="empId"></param>
+            <param name="existingPermissionModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V2_1.AssessmentController">
+            <summary>
+            Version 2.1 : Contains API's for Assessment Module
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V2_1.AssessmentController.#ctor(Trigger.BLL.Assessment.Assessment)">
+            <summary>
+            Assessment Constructor
+            </summary>
+            <param name="assessment"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V2_1.AssessmentController.PostAsync(Trigger.DTO.EmpAssessmentModel)">
+            <summary>
+            POST api/values 
+            Method to Save Assessment Details version 2.1
+            </summary>
+            <param name="empAssessmentModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V2_1.AssessmentController.DeleteDocumentAsync(Trigger.DTO.EmpAssessmentDet)">
+            <summary>
+            Version v2.1 : Delete assessment attachment for comment and remove document name from assessment details
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V2_1.AssessmentController.UpdateAssessmentCommentAsync(Trigger.DTO.EmpAssessmentDet)">
+            <summary>
+            Version v2.1 : Update assessment general and categorywise comments
+            </summary>
+            <param name="empAssessmentDet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V2_1.AssessmentController.DeleteAssessmentCommentAsync(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Version v2.1 : API to delete assessment comment including attachment with that comment for remark category
+            </summary>
+            <param name="assessmentId"></param>
+            <param name="remarkId"></param>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V2_1.DashboardController">
+            <summary>
+            API's for Dashboard
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V2_1.DashboardController.#ctor(Trigger.BLL.Dashboard.Dashboard)">
+            <summary>
+            Costructor for Dashboard
+            </summary>
+            <param name="dashboard"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V2_1.DashboardController.Get(System.Int32)">
+            <summary>
+            Method to get Employee Dashboard by EmpId version 2
+            </summary>
+            <param name="empId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V2_1.EmployeeController">
+            <summary>
+            controller to perform action for employee
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V2_1.EmployeeController.#ctor(Trigger.BLL.Employee.DashboardEmployeeList,Trigger.BLL.Employee.TriggerEmployeeList)">
+            <summary>
+            employee constructor 
+            </summary>
+            <param name="dashboardEmployee"></param>
+            <param name="triggerEmployee"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V2_1.EmployeeController.GetTriggerEmpList(System.Int32,System.Int32)">
+            <summary>
+            Api version 2.0 to get employee list for Trigger employee 
+            </summary>
+            <param name="companyId"></param>
+            <param name="managerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V2_1.EmployeeController.GetDashboardEmpList(System.Int32,System.Int32)">
+            <summary>
+            Api version 2.0 to get employee list for Employee Dashboard
+            </summary>
+            <param name="companyId"></param>
+            <param name="managerId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V2_1.LoginController">
+            <summary>
+            API's for Login Module
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V2_1.LoginController.#ctor(Trigger.BLL.Login.Login)">
+            <summary>
+            Constructor for Login
+            </summary>
+            <param name="login"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V2_1.LoginController.PostAsync(Trigger.DTO.UserLoginModel)">
+            <summary>
+            Check for User and Response with user details
+            </summary>
+            <param name="userLoginModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V2_2.AssessmentController">
+            <summary>
+            Version 2.2 : Contains API's for Assessment Module
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V2_2.AssessmentController.#ctor(Trigger.BLL.Assessment.Assessment)">
+            <summary>
+            Assessment Constructor
+            </summary>
+            <param name="assessment"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V2_2.AssessmentController.PostAsync(Trigger.DTO.EmpAssessmentModel)">
+            <summary>
+            POST api/values 
+            Method to Save Assessment Details version 2.2
+            </summary>
+            <param name="empAssessmentModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V2_2.DashboardController">
+            <summary>
+            API's for Dashboard
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V2_2.DashboardController.#ctor(Trigger.BLL.Dashboard.Dashboard)">
+            <summary>
+            Costructor for Dashboard
+            </summary>
+            <param name="dashboard"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V2_2.DashboardController.Get(System.Int32)">
+            <summary>
+            Method to get Employee Dashboard by EmpId version 2
+            </summary>
+            <param name="empId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V2.ActionPermissionController">
+            <summary>
+            Class Name   :   ActionPermissionController
+            Author       :   Vivek Bhavsar
+            Creation Date:   11 June 2019
+            Purpose      :   Controller for Dimension and Actionwise Permission Configurations
+            Revision     :  
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V2.ActionPermissionController.#ctor(Trigger.BLL.DimensionMatrix.ActionwisePermission)">
+            <summary>
+            Constructor for Dimension Elements Controller
+            </summary>
+            <param name="actionwisePermission"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V2.ActionPermissionController.CheckWithExistingActionPermission(System.Int32,System.Collections.Generic.List{Trigger.DTO.DimensionMatrix.ActionList})">
+            <summary>
+            Version 2 : Api to check permission with existing permission
+            </summary>
+            <param name="empId"></param>
+            <param name="existingPermissionModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V2.AssessmentController">
+            <summary>
+            Contains API's for Assessment Module
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V2.AssessmentController.#ctor(Trigger.BLL.Assessment.Assessment)">
+            <summary>
+            Assessment Constructor
+            </summary>
+            <param name="assessment"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V2.AssessmentController.PostAsync(Trigger.DTO.EmpAssessmentModel)">
+            <summary>
+            POST api/values 
+            Method to Save Assessment Details version 2
+            </summary>
+            <param name="empAssessmentModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V2.AssessmentController.DeleteDocumentAsync(Trigger.DTO.EmpAssessmentDet)">
+            <summary>
+            Delete assessment attachment for comment and remove document name from assessment details
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V2.AssessmentController.UpdateAssessmentCommentAsync(Trigger.DTO.EmpAssessmentDet)">
+            <summary>
+            Update assessment general and categorywise comments
+            </summary>
+            <param name="empAssessmentDet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V2.AssessmentController.DeleteAssessmentCommentAsync(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            API to delete assessment comment including attachment with that comment for remark category
+            </summary>
+            <param name="assessmentId"></param>
+            <param name="remarkId"></param>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V2.DashboardController">
+            <summary>
+            API's for Dashboard
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V2.DashboardController.#ctor(Trigger.BLL.Dashboard.Dashboard)">
+            <summary>
+            Costructor for Dashboard
+            </summary>
+            <param name="dashboard"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V2.DashboardController.Get(System.Int32)">
+            <summary>
+            Method to get Employee Dashboard by EmpId version 2
+            </summary>
+            <param name="empId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V2.EmployeeController">
+            <summary>
+            controller to perform action for employee
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V2.EmployeeController.#ctor(Trigger.BLL.Employee.Employee)">
+            <summary>
+            employee constructor 
+            </summary>
+            <param name="employee"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V2.EmployeeController.GetTriggerEmpList(System.Int32,System.Int32)">
+            <summary>
+            Api version 2.0 to get employee list for Trigger employee 
+            </summary>
+            <param name="companyId"></param>
+            <param name="managerId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V2.EmployeeController.GetDashboardEmpList(System.Int32,System.Int32)">
+            <summary>
+            Api version 2.0 to get employee list for Employee Dashboard
+            </summary>
+            <param name="companyId"></param>
+            <param name="managerId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V2.EmployeeSparkController">
+            <summary>
+            Class Name   :   EmployeeSparkController
+            Author       :   Mayur Patel
+            Creation Date:   17 September 2019
+            Purpose      :   Controller to perform Employee Spark with newly added team wise permission
+            Revision     :  
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V2.EmployeeSparkController.#ctor(Trigger.BLL.Spark.EmployeeSpark)">
+            <summary>
+            constructor to initialized employeespark object
+            </summary>
+            <param name="employeeSpark"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V2.EmployeeSparkController.PostAsync(Trigger.DTO.Spark.EmployeeSparkModel)">
+            <summary>
+            API to spark an employee with document attachment
+            </summary>
+            <param name="employeeSparkModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V2.EmployeeSparkController.PutAsync(Trigger.DTO.Spark.EmployeeSparkModel)">
+            <summary>
+            API to update spark of an employee including document attachment
+            </summary>
+            <param name="employeeSparkModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V2.EmployeeSparkController.DeleteAsync(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            API to delete spark of an employee
+            </summary>
+            <param name="empId"></param>
+            <param name="sparkId"></param>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Controllers.V2.EmployeeSparkController.DeleteAttachmentAsync(Trigger.DTO.Spark.EmployeeSparkModel)">
+            <summary>
+            API to delete attachment of spark for an employee
+            </summary>
+            <param name="employeeSparkModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Controllers.V2.LoginController">
+            <summary>
+            API's for Login Module
+            </summary>
+        </member>
+        <member name="M:Trigger.Controllers.V2.LoginController.#ctor(Trigger.BLL.Login.Login)">
+            <summary>
+            Constructor for Login
+            </summary>
+            <param name="login"></param>
+        </member>
+        <member name="M:Trigger.Controllers.V2.LoginController.PostAsync(Trigger.DTO.UserLoginModel)">
+            <summary>
+            Check for User and Response with user details
+            </summary>
+            <param name="userLoginModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Middleware.ConnectionByPhoneNumberAttribute">
+            <summary>
+            Class Name   :   SparkSms
+            Author       :   Vivek Bhavsar
+            Creation Date:   29 Aug 2019
+            Purpose      :   Attribute to set context connection using registered phone number of user
+            Revision     :
+            </summary>
+        </member>
+        <member name="M:Trigger.Middleware.ConnectionByPhoneNumberAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            Connection attribute to set connecton by finding company of user by phone number 
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Trigger.Middleware.DynamicConnectionAttribute">
+            <summary>
+            Role base dynamic connection of Catalog or Tenant database
+            </summary>
+        </member>
+        <member name="M:Trigger.Middleware.DynamicConnectionAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            Generate role base dynamic connection string
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Trigger.Middleware.DynamicConnectionAttribute.GetCompanyIdFromRequest(System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            Get Companyid from request body
+            </summary>
+            <param name="object"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Middleware.LandingMiddleware">
+            <summary>
+            Common middleware to hit before any api hit
+            </summary>
+        </member>
+        <member name="M:Trigger.Middleware.LandingMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            Constructor for Landing Middleware
+            </summary>
+            <param name="next"></param>
+        </member>
+        <member name="M:Trigger.Middleware.LandingMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext,Trigger.DTO.Connection,Trigger.BLL.Shared.Interfaces.IClaims,Trigger.BLL.Shared.Interfaces.ILandingMiddlewareManager)">
+            <summary>
+            Invoikes next action to execute base on Login response as user data
+            </summary>
+            <param name="httpContext"></param>
+            <param name="connection"></param>
+            <param name="claim"></param>
+            <param name="landingMiddlewareManager"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Middleware.LandingMiddlewareManager">
+            <summary>
+            Landing Middleware Manager to validate and set response for login
+            </summary>
+        </member>
+        <member name="M:Trigger.Middleware.LandingMiddlewareManager.#ctor(Microsoft.Extensions.Logging.ILogger{Trigger.Middleware.LandingMiddlewareManager})">
+            <summary>
+            Constructor for Landing Middleware
+            </summary>
+        </member>
+        <member name="M:Trigger.Middleware.LandingMiddlewareManager.CheckUserLogin(System.String,System.String)">
+            <summary>
+            Validate user
+            </summary>
+            <param name="connectionString"></param>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Middleware.LandingMiddlewareManager.SetLoggedUserdData(System.Data.DataRow)">
+            <summary>
+            Set response data from datarow object
+            </summary>
+            <param name="dataRow"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Middleware.LandingMiddlewareManager.SetEmloyeeDetails(System.Data.DataRow)">
+            <summary>
+            Set employeedetails based on login response
+            </summary>
+            <param name="dataRow"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Middleware.LandingMiddlewareManager.GetDataTableADO(System.String,System.String,System.Data.SqlClient.SqlParameter[])">
+            <summary>
+            Get response as datatable  for sql operation
+            </summary>
+            <param name="connectionString"></param>
+            <param name="storedProcedureName"></param>
+            <param name="sqlParameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Trigger.Middleware.LandingMiddlewareManager.ExecuteDataTable(System.String,System.String,System.Data.SqlClient.SqlParameter[],System.Object[])">
+            <summary>
+            Get response as datatable  for sql operation
+            </summary>
+        </member>
+        <member name="M:Trigger.Middleware.LandingMiddlewareManager.BeginStoredProcedure(System.Data.SqlClient.SqlConnection,System.String,System.Data.SqlClient.SqlParameter[],System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="sqlConnection"></param>
+            <param name="storedProcedure"></param>
+            <param name="parameters"></param>
+            <param name="parameterValues"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Middleware.ParameterValidationAttribute">
+            <summary>
+            Parameter Validation Attribute
+            </summary>
+        </member>
+        <member name="M:Trigger.Middleware.ParameterValidationAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            validate parametrs from context
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Trigger.Program">
+            <summary>
+            Main Class for Project
+            </summary>
+        </member>
+        <member name="M:Trigger.Program.Main(System.String[])">
+            <summary>
+            Constructor for Main
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Trigger.Program.CreateWebHostBuilder(System.String[])">
+            <summary>
+            Set Startup
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Trigger.Startup">
+            <summary>
+            Startup Class
+            </summary>
+        </member>
+        <member name="P:Trigger.Startup.Configuration">
+            <summary>
+            declare configuration object
+            </summary>
+        </member>
+        <member name="M:Trigger.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            Setup Startup
+            </summary>
+            <param name="configuration"></param>
+            <param name="hostingEnvironment"></param>
+        </member>
+        <member name="M:Trigger.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            ConfigureServices
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Trigger.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline. 
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+        <member name="T:Trigger.TriggerServiceExtensions">
+            <summary>
+            Contains method for registering interfaces and classes in service collection
+            </summary>
+        </member>
+        <member name="M:Trigger.TriggerServiceExtensions.AddTriggerService(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Register interfaces and classes in service collection
+            </summary>
+            <param name="services"></param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,23 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "EmpId",
+      "dataType": "int"
+    },
+    {
+      "key": "optforsms",
+      "dataType": "bit"
+    },
+    {
+      "key": "updatedBy",
+      "dataType": "int"
+    },
+    {
+      "key": "Result",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Output"
+    }
+  ]
+}

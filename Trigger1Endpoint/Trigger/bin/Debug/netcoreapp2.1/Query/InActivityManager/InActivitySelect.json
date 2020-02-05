@@ -1,0 +1,17 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "CompanyId",
+      "dataType": "int"
+    },
+    {
+      "key": "InActivityDays",
+      "dataType": "int"
+    },
+    {
+      "key": "ReminderDays",
+      "dataType": "int"
+    }
+  ]
+}

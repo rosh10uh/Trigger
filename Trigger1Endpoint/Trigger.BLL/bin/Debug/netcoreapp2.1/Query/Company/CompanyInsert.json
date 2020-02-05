@@ -1,0 +1,111 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "IndustryTypeId",
+      "dataType": "tinyint"
+    },
+    {
+      "key": "CompanyName",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "Address1",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "Address2",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "City",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "State",
+      "dataType": "varchar"
+    },
+    {
+      "key": "ZipCode",
+      "dataType": "varchar"
+    },
+    {
+      "key": "Country",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "Phoneno1",
+      "dataType": "bigint"
+    },
+    {
+      "key": "Phoneno2",
+      "dataType": "bigint"
+    },
+    {
+      "key": "Website",
+      "dataType": "varchar"
+    },
+    {
+      "key": "keyempname",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "keyempemail",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "Remarks",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "CostPerEmp",
+      "dataType": "decimal"
+    },
+    {
+      "key": "fixedAmtPerMon",
+      "dataType": "decimal"
+    },
+    {
+      "key": "CompImgpath",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "DealsRemarks",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "ContractStartDate",
+      "dataType": "date"
+    },
+    {
+      "key": "ContractEndDate",
+      "dataType": "date"
+    },
+    {
+      "key": "gracePeriod",
+      "dataType": "INT"
+    },
+    {
+      "key": "InActivityDays",
+      "dataType": "INT"
+    },
+    {
+      "key": "ReminderDays",
+      "dataType": "INT"
+    },
+    {
+      "key": "OrganizationTypeId",
+      "dataType": "INT"
+    },
+    {
+      "key": "CreatedBy",
+      "dataType": "int"
+    },
+    {
+      "key": "Result",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Output"
+    }
+  ]
+}

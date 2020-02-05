@@ -1,0 +1,9 @@
+C:\Roshan Patel\Trigger\QueryString\Trigger1Endpoint\Trigger.DTO\bin\Debug\netcoreapp2.0\Trigger.DTO.deps.json
+C:\Roshan Patel\Trigger\QueryString\Trigger1Endpoint\Trigger.DTO\bin\Debug\netcoreapp2.0\Trigger.DTO.dll
+C:\Roshan Patel\Trigger\QueryString\Trigger1Endpoint\Trigger.DTO\bin\Debug\netcoreapp2.0\Trigger.DTO.pdb
+C:\Roshan Patel\Trigger\QueryString\Trigger1Endpoint\Trigger.DTO\obj\Debug\netcoreapp2.0\Trigger.DTO.csprojAssemblyReference.cache
+C:\Roshan Patel\Trigger\QueryString\Trigger1Endpoint\Trigger.DTO\obj\Debug\netcoreapp2.0\Trigger.DTO.csproj.CoreCompileInputs.cache
+C:\Roshan Patel\Trigger\QueryString\Trigger1Endpoint\Trigger.DTO\obj\Debug\netcoreapp2.0\Trigger.DTO.AssemblyInfoInputs.cache
+C:\Roshan Patel\Trigger\QueryString\Trigger1Endpoint\Trigger.DTO\obj\Debug\netcoreapp2.0\Trigger.DTO.AssemblyInfo.cs
+C:\Roshan Patel\Trigger\QueryString\Trigger1Endpoint\Trigger.DTO\obj\Debug\netcoreapp2.0\Trigger.DTO.dll
+C:\Roshan Patel\Trigger\QueryString\Trigger1Endpoint\Trigger.DTO\obj\Debug\netcoreapp2.0\Trigger.DTO.pdb

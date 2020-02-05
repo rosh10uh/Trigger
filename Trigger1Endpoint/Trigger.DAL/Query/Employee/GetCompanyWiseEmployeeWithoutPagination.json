@@ -1,0 +1,14 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "CompanyId",
+      "dataType": "int"
+    },
+    {
+      "key": "departmentlist",
+      "dataType": "varchar",
+      "Direction": "Input"
+    }
+  ]
+}

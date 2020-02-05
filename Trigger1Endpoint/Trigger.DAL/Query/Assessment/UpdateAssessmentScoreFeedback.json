@@ -1,0 +1,27 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "AssessmentId",
+      "dataType": "int"
+    },
+    {
+      "key": "ScoreFeedback",
+      "dataType": "bit"
+    },
+    {
+      "key": "ExpectedScoreId",
+      "dataType": "int"
+    },
+    {
+      "key": "FeedbackRemark",
+      "dataType": "varchar"
+    },
+    {
+      "key": "Result",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Output"
+    }
+  ]
+}

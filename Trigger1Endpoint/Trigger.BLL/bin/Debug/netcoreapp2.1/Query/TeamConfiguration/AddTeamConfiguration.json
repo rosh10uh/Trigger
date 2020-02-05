@@ -1,0 +1,35 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "Name",
+      "dataType": "varchar"
+    },
+    {
+      "key": "Description",
+      "dataType": "varchar"
+    },
+    {
+      "key": "StartDate",
+      "dataType": "datetime"
+    },
+    {
+      "key": "EndDate",
+      "dataType": "datetime"
+    },
+    {
+      "key": "TriggerActivityDays",
+      "dataType": "int"
+    },
+    {
+      "key": "CreatedBy",
+      "dataType": "int"
+    },
+    {
+      "key": "TeamId",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Output"
+    }
+  ]
+}

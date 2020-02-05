@@ -1,0 +1,54 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "YearId",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Input"
+    },
+    {
+      "key": "CompanyId",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Input"
+    },
+    {
+      "key": "ManagerId",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Input"
+    },
+    {
+      "key": "Month",
+      "dataType": "varchar",
+      "Direction": "Input"
+    },
+    {
+      "key": "Grade",
+      "dataType": "varchar",
+      "Direction": "Input"
+    },
+    {
+      "key": "pagenumber",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Input"
+    },
+    {
+      "key": "pagesize",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Input"
+    },
+    {
+      "key": "searchstring",
+      "dataType": "nvarchar",
+      "Direction": "Input"
+    },
+    {
+      "key": "departmentlist",
+      "dataType": "varchar"
+    }
+  ]
+}

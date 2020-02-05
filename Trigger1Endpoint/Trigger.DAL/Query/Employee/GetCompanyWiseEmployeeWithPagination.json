@@ -1,0 +1,31 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "CompanyId",
+      "dataType": "int"
+    },
+    {
+      "key": "pagenumber",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Input"
+    },
+    {
+      "key": "pagesize",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Input"
+    },
+    {
+      "key": "searchstring",
+      "dataType": "nvarchar",
+      "Direction": "Input"
+    },
+    {
+      "key": "departmentlist",
+      "dataType": "varchar",
+      "Direction": "Input"
+    }
+  ]
+}

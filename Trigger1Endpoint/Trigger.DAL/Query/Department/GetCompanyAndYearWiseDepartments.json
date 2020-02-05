@@ -1,0 +1,15 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "companyId",
+      "dataType": "int",
+      "defaultValue": "0"
+    },
+    {
+      "key": "yearId",
+      "dataType": "varchar",
+      "defaultValue": "0"
+    }
+  ]
+}

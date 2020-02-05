@@ -1,0 +1,1 @@
+SELECT DBName as TenantName FROM CompanyDbConfig WHERE [CompanyId] = @CompanyId;

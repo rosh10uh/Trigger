@@ -1,0 +1,10 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "AssessmentId",
+      "dataType": "int",
+      "defaultValue": "0"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "CompanyId",
+      "dataType": "int"
+    },
+    {
+      "key": "Department",
+      "dataType": "varchar"
+    },
+    {
+      "key": "CreatedBy",
+      "dataType": "int"
+    },
+    {
+      "key": "Result",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "InputOutput"
+    }
+  ]
+}

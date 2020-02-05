@@ -1,0 +1,37 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "UserName",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "NormalizedUserName",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "Email",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "NormalizedEmail",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "subId",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "EmailConfirmed",
+      "dataType": "bit"
+    },
+    {
+      "key": "PhoneNumber",
+      "dataType": "varchar"
+    },
+    {
+      "key": "PhoneNumberConfirmed",
+      "dataType": "bit"
+    }
+  ]
+}

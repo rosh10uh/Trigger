@@ -1,0 +1,1 @@
+﻿SELECT [PasswordHash] FROM [AspNetUsers] WHERE [Email] = @UserName

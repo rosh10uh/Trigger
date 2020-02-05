@@ -1,0 +1,35 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "EmpId",
+      "dataType": "int"
+    },
+    {
+      "key": "phoneNumber",
+      "dataType": "varchar"
+    },
+    {
+      "key": "WorkCity",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "WorkState",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "WorkZipcode",
+      "dataType": "varchar"
+    },
+    {
+      "key": "updatedBy",
+      "dataType": "int"
+    },
+    {
+      "key": "Result",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Output"
+    }
+  ]
+}

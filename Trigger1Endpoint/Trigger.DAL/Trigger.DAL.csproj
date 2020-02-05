@@ -1,0 +1,1046 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Queries\**" />
+    <Compile Remove="Query\CSVUpload\**" />
+    <Compile Remove="Query\DashBoard\**" />
+    <Compile Remove="Query\Subscribers\**" />
+    <Compile Remove="Query\WidgetType\**" />
+    <EmbeddedResource Remove="Queries\**" />
+    <EmbeddedResource Remove="Query\CSVUpload\**" />
+    <EmbeddedResource Remove="Query\DashBoard\**" />
+    <EmbeddedResource Remove="Query\Subscribers\**" />
+    <EmbeddedResource Remove="Query\WidgetType\**" />
+    <None Remove="Queries\**" />
+    <None Remove="Query\CSVUpload\**" />
+    <None Remove="Query\DashBoard\**" />
+    <None Remove="Query\Subscribers\**" />
+    <None Remove="Query\WidgetType\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Query\CSVUpload\**" />
+    <Content Include="Query\**" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Query\Subscribers\**" />
+    <Content Remove="Query\WidgetType\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Assessment\AssessmentRemarkRepository.cs" />
+    <Compile Remove="Query\AssessmentDetail\AssessmentRepository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Query\AssessmentDetail\AddAssessmentDetailsWithAttachment.json" />
+    <Content Remove="Query\AssessmentDetail\AddAssessmentDetailsWithAttachment.sql" />
+    <Content Remove="Query\AssessmentDetail\AssessmentDetailSelect.json" />
+    <Content Remove="Query\AssessmentDetail\AssessmentDetailSelect.sql" />
+    <Content Remove="Query\AssessmentDetail\AssessmentRepository.cs" />
+    <Content Remove="Query\AssessmentDetail\DeleteAssessmentAttachment.json" />
+    <Content Remove="Query\AssessmentDetail\DeleteAssessmentAttachment.sql" />
+    <Content Remove="Query\AssessmentDetail\DeleteAssessmentComment.json" />
+    <Content Remove="Query\AssessmentDetail\DeleteAssessmentComment.sql" />
+    <Content Remove="Query\AssessmentDetail\UpdateAssessmentComment.json" />
+    <Content Remove="Query\AssessmentDetail\UpdateAssessmentComment.sql" />
+    <Content Remove="Query\Assessment\AddAssessmentWithAttachment.json" />
+    <Content Remove="Query\Assessment\AddAssessmentWithAttachment.sql" />
+    <Content Remove="Query\Assessment\GetAssessmentScore.json" />
+    <Content Remove="Query\Assessment\GetAssessmentScore.sql" />
+    <Content Remove="Query\Assessment\UpdateAssessmentScoreFeedback.json" />
+    <Content Remove="Query\Assessment\UpdateAssessmentScoreFeedback.sql" />
+    <Content Remove="Query\AuthUserDetail\AuthUserDetailDelete.json" />
+    <Content Remove="Query\AuthUserDetail\AuthUserDetailDelete.sql" />
+    <Content Remove="Query\AuthUserDetail\AuthUserDetailInsert.json" />
+    <Content Remove="Query\AuthUserDetail\AuthUserDetailInsert.sql" />
+    <Content Remove="Query\AuthUserDetail\AuthUserDetailUpdate.json" />
+    <Content Remove="Query\AuthUserDetail\AuthUserDetailUpdate.sql" />
+    <Content Remove="Query\AuthUserDetail\GetAuthDetailsByEmail.json" />
+    <Content Remove="Query\AuthUserDetail\GetAuthDetailsByEmail.sql" />
+    <Content Remove="Query\AuthUserDetail\GetPasswordHashByUserName.json" />
+    <Content Remove="Query\AuthUserDetail\GetPasswordHashByUserName.sql" />
+    <Content Remove="Query\AuthUserDetail\GetSubIdByEmail.json" />
+    <Content Remove="Query\AuthUserDetail\GetSubIdByEmail.sql" />
+    <Content Remove="Query\ChangePassword\ChangeAuthPassword.json" />
+    <Content Remove="Query\ChangePassword\ChangeAuthPassword.sql" />
+    <Content Remove="Query\DashBoard\GetTeamAssessmentYear.json" />
+    <Content Remove="Query\DashBoard\GetTeamAssessmentYear.sql" />
+    <Content Remove="Query\DashBoard\GetTeamListCount.json" />
+    <Content Remove="Query\DashBoard\GetTeamListCount.sql" />
+    <Content Remove="Query\DashBoard\GetYearWiseTeamDashboard.json" />
+    <Content Remove="Query\DashBoard\GetYearWiseTeamDashboard.sql" />
+    <Content Remove="Query\DashBoard\GetYearWiseTeamList.json" />
+    <Content Remove="Query\DashBoard\GetYearWiseTeamList.sql" />
+    <Content Remove="Query\Department\GetCompanyAndYearWiseDepartments.json" />
+    <Content Remove="Query\Department\GetCompanyAndYearWiseDepartments.sql" />
+    <Content Remove="Query\Department\GetCompanyWiseDepartments.json" />
+    <Content Remove="Query\Department\GetCompanyWiseDepartments.sql" />
+    <Content Remove="Query\DimensionMatrix\ActionwisePermissionInsert.json" />
+    <Content Remove="Query\DimensionMatrix\ActionwisePermissionInsert.sql" />
+    <Content Remove="Query\DimensionMatrix\ActionwisePermissionSelectAll.json" />
+    <Content Remove="Query\DimensionMatrix\ActionwisePermissionSelectAll.sql" />
+    <Content Remove="Query\DimensionMatrix\DimensionElementsDelete.json" />
+    <Content Remove="Query\DimensionMatrix\DimensionElementsDelete.sql" />
+    <Content Remove="Query\DimensionMatrix\ActionwisePermission\GetActionWisePermission.json" />
+    <Content Remove="Query\DimensionMatrix\ActionwisePermission\GetActionWisePermission.sql" />
+    <Content Remove="Query\DimensionMatrix\DimensionElementsInsert.json" />
+    <Content Remove="Query\DimensionMatrix\DimensionElementsInsert.sql" />
+    <Content Remove="Query\DimensionMatrix\DimensionElementsSelectAll.json" />
+    <Content Remove="Query\DimensionMatrix\DimensionElementsSelectAll.sql" />
+    <Content Remove="Query\DimensionMatrix\DimensionElementsUpdate.json" />
+    <Content Remove="Query\DimensionMatrix\DimensionElementsUpdate.sql" />
+    <Content Remove="Query\DimensionMatrix\DimensionInsert.json" />
+    <Content Remove="Query\DimensionMatrix\DimensionInsert.sql" />
+    <Content Remove="Query\DimensionMatrix\DimensionSelectAll.json" />
+    <Content Remove="Query\DimensionMatrix\DimensionSelectAll.sql" />
+    <Content Remove="Query\DimensionMatrix\DimensionUpdate.json" />
+    <Content Remove="Query\DimensionMatrix\DimensionUpdate.sql" />
+    <Content Remove="Query\DimensionMatrix\GetAllActions.json" />
+    <Content Remove="Query\DimensionMatrix\GetAllActions.sql" />
+    <Content Remove="Query\EmailTemplate\GetTemplateByName.json" />
+    <Content Remove="Query\EmailTemplate\GetTemplateByName.sql" />
+    <Content Remove="Query\EmployeeProfile\EmployeeProfileSelect.json" />
+    <Content Remove="Query\EmployeeProfile\EmployeeProfileSelect.sql" />
+    <Content Remove="Query\EmployeeProfile\EmployeeProfileUpdate.json" />
+    <Content Remove="Query\EmployeeProfile\EmployeeProfileUpdate.sql" />
+    <Content Remove="Query\EmployeeProfile\UpdateOptForSMS.json" />
+    <Content Remove="Query\EmployeeProfile\UpdateOptForSMS.sql" />
+    <Content Remove="Query\Employee\GetActiveManagerList.json" />
+    <Content Remove="Query\Employee\GetActiveManagerList.sql" />
+    <Content Remove="Query\Employee\GetAllCompanyAdminListWithoutPagination.json" />
+    <Content Remove="Query\Employee\GetAllCompanyAdminListWithoutPagination.sql" />
+    <Content Remove="Query\Employee\GetAllEmployeeByManagerYearwiseWithoutPagination.json" />
+    <Content Remove="Query\Employee\GetAllEmployeeByManagerYearwiseWithoutPagination.sql" />
+    <Content Remove="Query\Employee\GetAllEmployeesForActionByManager.json" />
+    <Content Remove="Query\Employee\GetAllEmployeesForActionByManager.sql" />
+    <Content Remove="Query\Employee\GetAllEmployeesForMail.json" />
+    <Content Remove="Query\Employee\GetAllEmployeesForMail.sql" />
+    <Content Remove="Query\Employee\GetAllEmployeesHierachyWithPagination.json" />
+    <Content Remove="Query\Employee\GetAllEmployeesHierachyWithPagination.sql" />
+    <Content Remove="Query\Employee\GetAllEmployeeWithHierachy.json" />
+    <Content Remove="Query\Employee\GetAllEmployeeWithHierachy.sql" />
+    <Content Remove="Query\Employee\GetAllEmployeeWithoutPagination.json" />
+    <Content Remove="Query\Employee\GetAllEmployeeWithoutPagination.sql" />
+    <Content Remove="Query\Employee\GetAllEmployeeYearwiseWithoutPagination.json" />
+    <Content Remove="Query\Employee\GetAllEmployeeYearwiseWithoutPagination.sql" />
+    <Content Remove="Query\Employee\GetAllNonManagers.json" />
+    <Content Remove="Query\Employee\GetAllNonManagers.sql" />
+    <Content Remove="Query\Employee\GetAllOrgEmployeeYearwise.json" />
+    <Content Remove="Query\Employee\GetAllOrgEmployeeYearwise.sql" />
+    <Content Remove="Query\Employee\GetAllOrgEmployeeYearwiseWithoutPagination.json" />
+    <Content Remove="Query\Employee\GetAllOrgEmployeeYearwiseWithoutPagination.sql" />
+    <Content Remove="Query\Employee\GetAspNetUserCountByPhone.json" />
+    <Content Remove="Query\Employee\GetAspNetUserCountByPhone.sql" />
+    <Content Remove="Query\Employee\GetAspnetUserEmailList.json" />
+    <Content Remove="Query\Employee\GetAspnetUserEmailList.sql" />
+    <Content Remove="Query\Employee\GetCompanyWiseEmployeeWithoutPagination.json" />
+    <Content Remove="Query\Employee\GetCompanyWiseEmployeeWithoutPagination.sql" />
+    <Content Remove="Query\Employee\GetEmpByGradeAndMonthByManagerYearwiseWithoutPagination.json" />
+    <Content Remove="Query\Employee\GetEmpByGradeAndMonthByManagerYearwiseWithoutPagination.sql" />
+    <Content Remove="Query\Employee\GetEmpByGradeAndMonthYearwiseWithoutPagination.json" />
+    <Content Remove="Query\Employee\GetEmpByGradeAndMonthYearwiseWithoutPagination.sql" />
+    <Content Remove="Query\Employee\GetEmployeeByEmpIdsForMails.json" />
+    <Content Remove="Query\Employee\GetEmployeeByEmpIdsForMails.sql" />
+    <Content Remove="Query\Employee\GetEmployeeByGradeByManagerYearwiseWithoutPagination.json" />
+    <Content Remove="Query\Employee\GetEmployeeByGradeByManagerYearwiseWithoutPagination.sql" />
+    <Content Remove="Query\Employee\GetEmployeeByGradeYearwiseWithoutPagination.json" />
+    <Content Remove="Query\Employee\GetEmployeeByGradeYearwiseWithoutPagination.sql" />
+    <Content Remove="Query\Employee\GetEmployeeByGradeYearwiseWithPagination.json" />
+    <Content Remove="Query\Employee\GetEmployeeByGradeYearwiseWithPagination.sql" />
+    <Content Remove="Query\Employee\GetEmployeeByIdForEditProfile.json" />
+    <Content Remove="Query\Employee\GetEmployeeByIdForEditProfile.sql" />
+    <Content Remove="Query\Employee\GetEmployeeNotPartOfTeamByManagerId.json" />
+    <Content Remove="Query\Employee\GetEmployeeNotPartOfTeamByManagerId.sql" />
+    <Content Remove="Query\Employee\GetEmpTeamRelationByManagerId.json" />
+    <Content Remove="Query\Employee\GetEmpTeamRelationByManagerId.sql" />
+    <Content Remove="Query\Employee\GetManagersDetByManagerIds.json" />
+    <Content Remove="Query\Employee\GetManagersDetByManagerIds.sql" />
+    <Content Remove="Query\Employee\GetOrgEmpByGradeAndMonthYearwiseWithoutPagination.json" />
+    <Content Remove="Query\Employee\GetOrgEmpByGradeAndMonthYearwiseWithoutPagination.sql" />
+    <Content Remove="Query\Employee\GetOrgEmployeeByGradeAndMonthYearwise.json" />
+    <Content Remove="Query\Employee\GetOrgEmployeeByGradeAndMonthYearwise.sql" />
+    <Content Remove="Query\Employee\GetOrgEmployeeByGradeYearwiseWithoutPagination.json" />
+    <Content Remove="Query\Employee\GetOrgEmployeeByGradeYearwiseWithoutPagination.sql" />
+    <Content Remove="Query\Employee\GetOrgEmployeeByGradeYearwiseWithPagination.json" />
+    <Content Remove="Query\Employee\GetOrgEmployeeByGradeYearwiseWithPagination.sql" />
+    <Content Remove="Query\Employee\GetOversightTeamEmployeesByManagerId.json" />
+    <Content Remove="Query\Employee\GetOversightTeamEmployeesByManagerId.sql" />
+    <Content Remove="Query\Employee\GetEmployeeDetailsByEmpIds.json" />
+    <Content Remove="Query\Employee\GetEmployeeDetailsByEmpIds.sql" />
+    <Content Remove="Query\Employee\GetYearwiseEmployeeWithHierachy.json" />
+    <Content Remove="Query\Employee\GetYearwiseEmployeeWithHierachy.sql" />
+    <Content Remove="Query\Employee\UpdateEmpForIsMailSent.json" />
+    <Content Remove="Query\Employee\UpdateEmpForIsMailSent.sql" />
+    <Content Remove="Query\EmpSalary\EmployeeSalaryUpdate.json" />
+    <Content Remove="Query\EmpSalary\EmployeeSalaryUpdate.sql" />
+    <Content Remove="Query\ExcelUpload\GetEmployeeByPhoneNumberCatalog.json" />
+    <Content Remove="Query\ExcelUpload\GetEmployeeByPhoneNumberCatalog.sql" />
+    <Content Remove="Query\ExcelUpload\GetEmployeeByPhoneNumberTenant.json" />
+    <Content Remove="Query\ExcelUpload\GetEmployeeByPhoneNumberTenant.sql" />
+    <Content Remove="Query\Login\DeleteDeviceByLoginUserId.json" />
+    <Content Remove="Query\Login\DeleteDeviceByLoginUserId.sql" />
+    <Content Remove="Query\Login\DeleteDeviceInfo.json" />
+    <Content Remove="Query\Login\DeleteDeviceInfo.sql" />
+    <Content Remove="Query\OrganizationType\OrganizationTypeSelectAll.sql" />
+    <Content Remove="Query\Questionnaries\GetAllCategories.json" />
+    <Content Remove="Query\Questionnaries\GetAllCategories.sql" />
+    <Content Remove="Query\ScoreRanks\GetAllScoreRanks.json" />
+    <Content Remove="Query\ScoreRanks\GetAllScoreRanks.sql" />
+    <Content Remove="Query\SmsService\SmsServiceInsert.json" />
+    <Content Remove="Query\SmsService\SmsServiceInsert.sql" />
+    <Content Remove="Query\SmsService\SmsServiceSelect.json" />
+    <Content Remove="Query\SmsService\SmsServiceSelect.sql" />
+    <Content Remove="Query\Spark\AddEmployeeSparkDetails.json" />
+    <Content Remove="Query\Spark\AddEmployeeSparkDetails.sql" />
+    <Content Remove="Query\Spark\ClassificationSelectAll.json" />
+    <Content Remove="Query\Spark\ClassificationSelectAll.sql" />
+    <Content Remove="Query\Spark\DeleteEmployeeSparkAttachment.json" />
+    <Content Remove="Query\Spark\DeleteEmployeeSparkAttachment.sql" />
+    <Content Remove="Query\Spark\DeleteEmployeeSparkDetails.json" />
+    <Content Remove="Query\Spark\DeleteEmployeeSparkDetails.sql" />
+    <Content Remove="Query\Spark\EmployeeSparkSelect.json" />
+    <Content Remove="Query\Spark\EmployeeSparkSelect.sql" />
+    <Content Remove="Query\Spark\GetAspnetUserByPhoneNumber.json" />
+    <Content Remove="Query\Spark\GetAspnetUserByPhoneNumber.sql" />
+    <Content Remove="Query\Spark\GetCompanyAdminList.json" />
+    <Content Remove="Query\Spark\GetCompanyAdminList.sql" />
+    <Content Remove="Query\Spark\GetEmployeeByEmployeeId.json" />
+    <Content Remove="Query\Spark\GetEmployeeByEmployeeId.sql" />
+    <Content Remove="Query\Spark\GetEmployeeSparkDetails.json" />
+    <Content Remove="Query\Spark\GetEmployeeSparkDetails.sql" />
+    <Content Remove="Query\Spark\GetEmployeeSparkDetailsBySparkId.json" />
+    <Content Remove="Query\Spark\GetEmployeeSparkDetailsBySparkId.sql" />
+    <Content Remove="Query\Spark\GetSparkRejectionDetails.json" />
+    <Content Remove="Query\Spark\GetSparkRejectionDetails.sql" />
+    <Content Remove="Query\Spark\GetTriggerAdminList.json" />
+    <Content Remove="Query\Spark\GetTriggerAdminList.sql" />
+    <Content Remove="Query\Spark\GetUnApprovedSparkByManager.json" />
+    <Content Remove="Query\Spark\GetUnApprovedSparkByManager.sql" />
+    <Content Remove="Query\Spark\GetUnApprovedSparkCountByManager.json" />
+    <Content Remove="Query\Spark\GetUnApprovedSparkCountByManager.sql" />
+    <Content Remove="Query\Spark\UpdateEmployeeSparkDetails.json" />
+    <Content Remove="Query\Spark\UpdateEmployeeSparkDetails.sql" />
+    <Content Remove="Query\Spark\UpdateSparkApprovalStatus.json" />
+    <Content Remove="Query\Spark\UpdateSparkApprovalStatus.sql" />
+    <Content Remove="Query\TeamConfiguration\AddTeamConfiguration.json" />
+    <Content Remove="Query\TeamConfiguration\AddTeamConfiguration.sql" />
+    <Content Remove="Query\TeamConfiguration\AddTeamEmployees.json" />
+    <Content Remove="Query\TeamConfiguration\AddTeamEmployees.sql" />
+    <Content Remove="Query\TeamConfiguration\AddTeamManagers.json" />
+    <Content Remove="Query\TeamConfiguration\AddTeamManagers.sql" />
+    <Content Remove="Query\TeamConfiguration\DeleteTeamEmployees.json" />
+    <Content Remove="Query\TeamConfiguration\DeleteTeamEmployees.sql" />
+    <Content Remove="Query\TeamConfiguration\DeleteTeamManagers.json" />
+    <Content Remove="Query\TeamConfiguration\DeleteTeamManagers.sql" />
+    <Content Remove="Query\TeamConfiguration\DeleteTeamManagersByTeamId.json" />
+    <Content Remove="Query\TeamConfiguration\DeleteTeamManagersByTeamId.sql" />
+    <Content Remove="Query\TeamConfiguration\GetAllTeamManagersByTeamId.json" />
+    <Content Remove="Query\TeamConfiguration\GetAllTeamManagersByTeamId.sql" />
+    <Content Remove="Query\TeamConfiguration\GetTeamDetailsById.json" />
+    <Content Remove="Query\TeamConfiguration\GetTeamDetailsById.sql" />
+    <Content Remove="Query\TeamConfiguration\GetTeamEmployeesByTeamId.json" />
+    <Content Remove="Query\TeamConfiguration\GetTeamEmployeesByTeamId.sql" />
+    <Content Remove="Query\TeamConfiguration\GetTeamManagersByTeamId.json" />
+    <Content Remove="Query\TeamConfiguration\GetTeamManagersByTeamId.sql" />
+    <Content Remove="Query\TeamConfiguration\SetTeamStatusInActive.json" />
+    <Content Remove="Query\TeamConfiguration\SetTeamStatusInActive.sql" />
+    <Content Remove="Query\TeamConfiguration\TeamConfigurationSelectAll.json" />
+    <Content Remove="Query\TeamConfiguration\TeamConfigurationSelectAll.sql" />
+    <Content Remove="Query\TeamConfiguration\UpdateTeamConfiguration.json" />
+    <Content Remove="Query\TeamConfiguration\UpdateTeamConfiguration.sql" />
+    <Content Remove="Query\TeamConfiguration\UpdateTeamEmployees.json" />
+    <Content Remove="Query\TeamConfiguration\UpdateTeamEmployees.sql" />
+    <Content Remove="Query\TeamConfiguration\UpdateTeamManagers.json" />
+    <Content Remove="Query\TeamConfiguration\UpdateTeamManagers.sql" />
+    <Content Remove="Query\WidgetLibrary\GetUserwiseWidget.json" />
+    <Content Remove="Query\WidgetLibrary\GetUserwiseWidget.sql" />
+    <Content Remove="Query\WidgetLibrary\WidgetLibraryInsert.json" />
+    <Content Remove="Query\WidgetLibrary\WidgetLibraryInsert.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Query\AssessmentDetail\AddAssessmentDetailsWithAttachment.json" />
+    <None Remove="Query\AssessmentDetail\AddAssessmentDetailsWithAttachment.sql" />
+    <None Remove="Query\AssessmentDetail\AssessmentDetailSelect.json" />
+    <None Remove="Query\AssessmentDetail\AssessmentDetailSelect.sql" />
+    <None Remove="Query\AssessmentDetail\DeleteAssessmentAttachment.json" />
+    <None Remove="Query\AssessmentDetail\DeleteAssessmentAttachment.sql" />
+    <None Remove="Query\AssessmentDetail\DeleteAssessmentComment.json" />
+    <None Remove="Query\AssessmentDetail\DeleteAssessmentComment.sql" />
+    <None Remove="Query\AssessmentDetail\UpdateAssessmentComment.json" />
+    <None Remove="Query\AssessmentDetail\UpdateAssessmentComment.sql" />
+    <None Remove="Query\Assessment\AddAssessmentWithAttachment.json" />
+    <None Remove="Query\Assessment\AddAssessmentWithAttachment.sql" />
+    <None Remove="Query\Assessment\UpdateAssessmentScoreFeedback.json" />
+    <None Remove="Query\Assessment\UpdateAssessmentScoreFeedback.sql" />
+    <None Remove="Query\AuthUserDetail\AuthUserDetailDelete.json" />
+    <None Remove="Query\AuthUserDetail\AuthUserDetailDelete.sql" />
+    <None Remove="Query\AuthUserDetail\GetAuthDetailsByEmail.json" />
+    <None Remove="Query\AuthUserDetail\GetAuthDetailsByEmail.sql" />
+    <None Remove="Query\Department\GetCompanyAndYearWiseDepartments.json" />
+    <None Remove="Query\Department\GetCompanyAndYearWiseDepartments.sql" />
+    <None Remove="Query\Department\GetCompanyWiseDepartments.json" />
+    <None Remove="Query\Department\GetCompanyWiseDepartments.sql" />
+    <None Remove="Query\DimensionMatrix\ActionwisePermissionInsert.json" />
+    <None Remove="Query\DimensionMatrix\ActionwisePermissionInsert.sql" />
+    <None Remove="Query\DimensionMatrix\ActionwisePermissionSelectAll.json" />
+    <None Remove="Query\DimensionMatrix\ActionwisePermissionSelectAll.sql" />
+    <None Remove="Query\DimensionMatrix\DimensionElementsDelete.json" />
+    <None Remove="Query\DimensionMatrix\DimensionElementsDelete.sql" />
+    <None Remove="Query\DimensionMatrix\ActionwisePermission\GetActionWisePermission.json" />
+    <None Remove="Query\DimensionMatrix\ActionwisePermission\GetActionWisePermission.sql" />
+    <None Remove="Query\DimensionMatrix\DimensionElementsInsert.json" />
+    <None Remove="Query\DimensionMatrix\DimensionElementsInsert.sql" />
+    <None Remove="Query\DimensionMatrix\DimensionElementsSelectAll.json" />
+    <None Remove="Query\DimensionMatrix\DimensionElementsSelectAll.sql" />
+    <None Remove="Query\DimensionMatrix\DimensionElementsUpdate.json" />
+    <None Remove="Query\DimensionMatrix\DimensionElementsUpdate.sql" />
+    <None Remove="Query\DimensionMatrix\DimensionInsert.json" />
+    <None Remove="Query\DimensionMatrix\DimensionInsert.sql" />
+    <None Remove="Query\DimensionMatrix\DimensionSelectAll.json" />
+    <None Remove="Query\DimensionMatrix\DimensionSelectAll.sql" />
+    <None Remove="Query\DimensionMatrix\DimensionUpdate.json" />
+    <None Remove="Query\DimensionMatrix\DimensionUpdate.sql" />
+    <None Remove="Query\DimensionMatrix\GetAllActions.json" />
+    <None Remove="Query\DimensionMatrix\GetAllActions.sql" />
+    <None Remove="Query\EmailTemplate\GetTemplateByName.json" />
+    <None Remove="Query\EmailTemplate\GetTemplateByName.sql" />
+    <None Remove="Query\EmployeeProfile\EmployeeProfileUpdate.json" />
+    <None Remove="Query\EmployeeProfile\EmployeeProfileUpdate.sql" />
+    <None Remove="Query\EmployeeProfile\UpdateOptForSMS.json" />
+    <None Remove="Query\EmployeeProfile\UpdateOptForSMS.sql" />
+    <None Remove="Query\Employee\GetActiveManagerList.json" />
+    <None Remove="Query\Employee\GetActiveManagerList.sql" />
+    <None Remove="Query\Employee\GetAllEmployeeByManagerYearwiseWithoutPagination.json" />
+    <None Remove="Query\Employee\GetAllEmployeeByManagerYearwiseWithoutPagination.sql" />
+    <None Remove="Query\Employee\GetAllEmployeesForActionByManager.json" />
+    <None Remove="Query\Employee\GetAllEmployeesForActionByManager.sql" />
+    <None Remove="Query\Employee\GetAllEmployeesForMail.json" />
+    <None Remove="Query\Employee\GetAllEmployeesForMail.sql" />
+    <None Remove="Query\Employee\GetAllEmployeesHierachyWithPagination.json" />
+    <None Remove="Query\Employee\GetAllEmployeesHierachyWithPagination.sql" />
+    <None Remove="Query\Employee\GetAllEmployeeWithHierachy.json" />
+    <None Remove="Query\Employee\GetAllEmployeeWithHierachy.sql" />
+    <None Remove="Query\Employee\GetAllEmployeeYearwiseWithoutPagination.json" />
+    <None Remove="Query\Employee\GetAllEmployeeYearwiseWithoutPagination.sql" />
+    <None Remove="Query\Employee\GetAllNonManagers.json" />
+    <None Remove="Query\Employee\GetAllNonManagers.sql" />
+    <None Remove="Query\Employee\GetAllOrgEmployeeYearwise.json" />
+    <None Remove="Query\Employee\GetAllOrgEmployeeYearwise.sql" />
+    <None Remove="Query\Employee\GetAllOrgEmployeeYearwiseWithoutPagination.json" />
+    <None Remove="Query\Employee\GetAllOrgEmployeeYearwiseWithoutPagination.sql" />
+    <None Remove="Query\Employee\GetAspNetUserCountByPhone.json" />
+    <None Remove="Query\Employee\GetAspNetUserCountByPhone.sql" />
+    <None Remove="Query\Employee\GetAspnetUserEmailList.json" />
+    <None Remove="Query\Employee\GetAspnetUserEmailList.sql" />
+    <None Remove="Query\Employee\GetCompanyWiseEmployeeWithoutPagination.json" />
+    <None Remove="Query\Employee\GetCompanyWiseEmployeeWithoutPagination.sql" />
+    <None Remove="Query\Employee\GetEmpByGradeAndMonthByManagerYearwiseWithoutPagination.json" />
+    <None Remove="Query\Employee\GetEmpByGradeAndMonthByManagerYearwiseWithoutPagination.sql" />
+    <None Remove="Query\Employee\GetEmpByGradeAndMonthYearwiseWithoutPagination.json" />
+    <None Remove="Query\Employee\GetEmpByGradeAndMonthYearwiseWithoutPagination.sql" />
+    <None Remove="Query\Employee\GetEmployeeByEmpIdsForMails.json" />
+    <None Remove="Query\Employee\GetEmployeeByEmpIdsForMails.sql" />
+    <None Remove="Query\Employee\GetEmployeeByGradeByManagerYearwiseWithoutPagination.json" />
+    <None Remove="Query\Employee\GetEmployeeByGradeByManagerYearwiseWithoutPagination.sql" />
+    <None Remove="Query\Employee\GetEmployeeByGradeYearwiseWithoutPagination.json" />
+    <None Remove="Query\Employee\GetEmployeeByGradeYearwiseWithoutPagination.sql" />
+    <None Remove="Query\Employee\GetEmployeeByGradeYearwiseWithPagination.json" />
+    <None Remove="Query\Employee\GetEmployeeByGradeYearwiseWithPagination.sql" />
+    <None Remove="Query\Employee\GetEmployeeByIdForEditProfile.json" />
+    <None Remove="Query\Employee\GetEmployeeByIdForEditProfile.sql" />
+    <None Remove="Query\Employee\GetEmployeeDetailsByEmpIds.json" />
+    <None Remove="Query\Employee\GetEmployeeDetailsByEmpIds.sql" />
+    <None Remove="Query\Employee\GetEmployeeNotPartOfTeamByManagerId.json" />
+    <None Remove="Query\Employee\GetEmployeeNotPartOfTeamByManagerId.sql" />
+    <None Remove="Query\Employee\GetEmpTeamRelationByManagerId.json" />
+    <None Remove="Query\Employee\GetEmpTeamRelationByManagerId.sql" />
+    <None Remove="Query\Employee\GetManagersDetByManagerIds.json" />
+    <None Remove="Query\Employee\GetManagersDetByManagerIds.sql" />
+    <None Remove="Query\Employee\GetOrgEmpByGradeAndMonthYearwiseWithoutPagination.json" />
+    <None Remove="Query\Employee\GetOrgEmpByGradeAndMonthYearwiseWithoutPagination.sql" />
+    <None Remove="Query\Employee\GetOrgEmployeeByGradeAndMonthYearwise.json" />
+    <None Remove="Query\Employee\GetOrgEmployeeByGradeAndMonthYearwise.sql" />
+    <None Remove="Query\Employee\GetOrgEmployeeByGradeYearwiseWithoutPagination.json" />
+    <None Remove="Query\Employee\GetOrgEmployeeByGradeYearwiseWithoutPagination.sql" />
+    <None Remove="Query\Employee\GetOrgEmployeeByGradeYearwiseWithPagination.json" />
+    <None Remove="Query\Employee\GetOrgEmployeeByGradeYearwiseWithPagination.sql" />
+    <None Remove="Query\Employee\GetOversightTeamEmployeesByManagerId.json" />
+    <None Remove="Query\Employee\GetOversightTeamEmployeesByManagerId.sql" />
+    <None Remove="Query\Employee\GetYearwiseEmployeeWithHierachy.json" />
+    <None Remove="Query\Employee\GetYearwiseEmployeeWithHierachy.sql" />
+    <None Remove="Query\Employee\UpdateEmpForIsMailSent.json" />
+    <None Remove="Query\Employee\UpdateEmpForIsMailSent.sql" />
+    <None Remove="Query\EmpSalary\EmployeeSalaryUpdate.json" />
+    <None Remove="Query\EmpSalary\EmployeeSalaryUpdate.sql" />
+    <None Remove="Query\ExcelUpload\GetEmployeeByPhoneNumberCatalog.json" />
+    <None Remove="Query\ExcelUpload\GetEmployeeByPhoneNumberCatalog.sql" />
+    <None Remove="Query\ExcelUpload\GetEmployeeByPhoneNumberTenant.json" />
+    <None Remove="Query\ExcelUpload\GetEmployeeByPhoneNumberTenant.sql" />
+    <None Remove="Query\Login\DeleteDeviceByLoginUserId.json" />
+    <None Remove="Query\Login\DeleteDeviceByLoginUserId.sql" />
+    <None Remove="Query\Login\DeleteDeviceInfo.json" />
+    <None Remove="Query\Login\DeleteDeviceInfo.sql" />
+    <None Remove="Query\Questionnaries\GetAllCategories.json" />
+    <None Remove="Query\Questionnaries\GetAllCategories.sql" />
+    <None Remove="Query\ScoreRanks\GetAllScoreRanks.json" />
+    <None Remove="Query\SmsService\SmsServiceInsert.json" />
+    <None Remove="Query\SmsService\SmsServiceInsert.sql" />
+    <None Remove="Query\SmsService\SmsServiceSelect.json" />
+    <None Remove="Query\SmsService\SmsServiceSelect.sql" />
+    <None Remove="Query\Spark\AddEmployeeSparkDetails.json" />
+    <None Remove="Query\Spark\AddEmployeeSparkDetails.sql" />
+    <None Remove="Query\Spark\ClassificationSelectAll.json" />
+    <None Remove="Query\Spark\ClassificationSelectAll.sql" />
+    <None Remove="Query\Spark\DeleteEmployeeSparkAttachment.json" />
+    <None Remove="Query\Spark\DeleteEmployeeSparkAttachment.sql" />
+    <None Remove="Query\Spark\DeleteEmployeeSparkDetails.json" />
+    <None Remove="Query\Spark\DeleteEmployeeSparkDetails.sql" />
+    <None Remove="Query\Spark\EmployeeSparkSelect.json" />
+    <None Remove="Query\Spark\EmployeeSparkSelect.sql" />
+    <None Remove="Query\Spark\GetAspnetUserByPhoneNumber.json" />
+    <None Remove="Query\Spark\GetAspnetUserByPhoneNumber.sql" />
+    <None Remove="Query\Spark\GetCompanyAdminList.json" />
+    <None Remove="Query\Spark\GetCompanyAdminList.sql" />
+    <None Remove="Query\Spark\GetEmployeeByEmployeeId.json" />
+    <None Remove="Query\Spark\GetEmployeeByEmployeeId.sql" />
+    <None Remove="Query\Spark\GetEmployeeSparkDetails.json" />
+    <None Remove="Query\Spark\GetEmployeeSparkDetails.sql" />
+    <None Remove="Query\Spark\GetEmployeeSparkDetailsBySparkId.json" />
+    <None Remove="Query\Spark\GetEmployeeSparkDetailsBySparkId.sql" />
+    <None Remove="Query\Spark\GetSparkRejectionDetails.json" />
+    <None Remove="Query\Spark\GetSparkRejectionDetails.sql" />
+    <None Remove="Query\Spark\GetTriggerAdminList.json" />
+    <None Remove="Query\Spark\GetTriggerAdminList.sql" />
+    <None Remove="Query\Spark\GetUnApprovedSparkByManager.json" />
+    <None Remove="Query\Spark\GetUnApprovedSparkByManager.sql" />
+    <None Remove="Query\Spark\GetUnApprovedSparkCountByManager.json" />
+    <None Remove="Query\Spark\GetUnApprovedSparkCountByManager.sql" />
+    <None Remove="Query\Spark\UpdateEmployeeSparkDetails.json" />
+    <None Remove="Query\Spark\UpdateEmployeeSparkDetails.sql" />
+    <None Remove="Query\Spark\UpdateSparkApprovalStatus.json" />
+    <None Remove="Query\Spark\UpdateSparkApprovalStatus.sql" />
+    <None Remove="Query\TeamConfiguration\AddTeamConfiguration.json" />
+    <None Remove="Query\TeamConfiguration\AddTeamConfiguration.sql" />
+    <None Remove="Query\TeamConfiguration\AddTeamEmployees.json" />
+    <None Remove="Query\TeamConfiguration\AddTeamEmployees.sql" />
+    <None Remove="Query\TeamConfiguration\AddTeamManagers.json" />
+    <None Remove="Query\TeamConfiguration\AddTeamManagers.sql" />
+    <None Remove="Query\TeamConfiguration\DeleteTeamEmployees.json" />
+    <None Remove="Query\TeamConfiguration\DeleteTeamEmployees.sql" />
+    <None Remove="Query\TeamConfiguration\DeleteTeamManagers.json" />
+    <None Remove="Query\TeamConfiguration\DeleteTeamManagers.sql" />
+    <None Remove="Query\TeamConfiguration\DeleteTeamManagersByTeamId.json" />
+    <None Remove="Query\TeamConfiguration\DeleteTeamManagersByTeamId.sql" />
+    <None Remove="Query\TeamConfiguration\GetAllTeamManagersByTeamId.json" />
+    <None Remove="Query\TeamConfiguration\GetAllTeamManagersByTeamId.sql" />
+    <None Remove="Query\TeamConfiguration\GetTeamDetailsById.json" />
+    <None Remove="Query\TeamConfiguration\GetTeamDetailsById.sql" />
+    <None Remove="Query\TeamConfiguration\GetTeamEmployeesByTeamId.json" />
+    <None Remove="Query\TeamConfiguration\GetTeamEmployeesByTeamId.sql" />
+    <None Remove="Query\TeamConfiguration\GetTeamManagersByTeamId.json" />
+    <None Remove="Query\TeamConfiguration\GetTeamManagersByTeamId.sql" />
+    <None Remove="Query\TeamConfiguration\SetTeamStatusInActive.json" />
+    <None Remove="Query\TeamConfiguration\SetTeamStatusInActive.sql" />
+    <None Remove="Query\TeamConfiguration\TeamConfigurationSelectAll.json" />
+    <None Remove="Query\TeamConfiguration\TeamConfigurationSelectAll.sql" />
+    <None Remove="Query\TeamConfiguration\UpdateTeamConfiguration.json" />
+    <None Remove="Query\TeamConfiguration\UpdateTeamConfiguration.sql" />
+    <None Remove="Query\TeamConfiguration\UpdateTeamEmployees.json" />
+    <None Remove="Query\TeamConfiguration\UpdateTeamEmployees.sql" />
+    <None Remove="Query\TeamConfiguration\UpdateTeamManagers.json" />
+    <None Remove="Query\TeamConfiguration\UpdateTeamManagers.sql" />
+    <None Remove="Query\WidgetLibrary\GetUserwiseWidget.json" />
+    <None Remove="Query\WidgetLibrary\GetUserwiseWidget.sql" />
+    <None Remove="Query\WidgetLibrary\WidgetLibraryInsert.json" />
+    <None Remove="Query\WidgetLibrary\WidgetLibraryInsert.sql" />
+    <Content Remove="Query\DashBoard\GetEmployeeDashboard.json" />
+    <Content Remove="Query\DashBoard\GetEmployeeDashboard.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Query\AssessmentDetail\AddAssessmentDetailsWithAttachment.json" />
+    <EmbeddedResource Include="Query\AssessmentDetail\AddAssessmentDetailsWithAttachment.sql" />
+    <EmbeddedResource Include="Query\AssessmentDetail\AssessmentDetailSelect.json" />
+    <EmbeddedResource Include="Query\AssessmentDetail\AssessmentDetailSelect.sql" />
+    <EmbeddedResource Include="Query\AssessmentDetail\DeleteAssessmentComment.json" />
+    <EmbeddedResource Include="Query\AssessmentDetail\DeleteAssessmentComment.sql" />
+    <EmbeddedResource Include="Query\AssessmentDetail\UpdateAssessmentComment.json" />
+    <EmbeddedResource Include="Query\AssessmentDetail\UpdateAssessmentComment.sql" />
+    <EmbeddedResource Include="Query\AssessmentDetail\DeleteAssessmentAttachment.json" />
+    <EmbeddedResource Include="Query\AssessmentDetail\DeleteAssessmentAttachment.sql" />
+    <EmbeddedResource Include="Query\Assessment\AddAssessmentWithAttachment.json" />
+    <EmbeddedResource Include="Query\Assessment\AddAssessmentWithAttachment.sql" />
+    <EmbeddedResource Include="Query\Assessment\UpdateAssessmentScoreFeedback.json" />
+    <EmbeddedResource Include="Query\Assessment\UpdateAssessmentScoreFeedback.sql" />
+    <EmbeddedResource Include="Query\AuthUserDetail\AuthUserDetailDelete.sql" />
+    <EmbeddedResource Include="Query\AuthUserDetail\AuthUserDetailDelete.json" />
+    <EmbeddedResource Include="Query\AuthUserDetail\AuthUserDetailUpdate.json" />
+    <EmbeddedResource Include="Query\AuthUserDetail\AuthUserDetailUpdate.sql" />
+    <EmbeddedResource Include="Query\AuthUserDetail\GetPasswordHashByUserName.json" />
+    <EmbeddedResource Include="Query\AuthUserDetail\GetPasswordHashByUserName.sql" />
+    <EmbeddedResource Include="Query\AuthUserDetail\GetAuthDetailsByEmail.json" />
+    <EmbeddedResource Include="Query\AuthUserDetail\GetAuthDetailsByEmail.sql" />
+    <EmbeddedResource Include="Query\AuthUserDetail\GetSubIdByEmail.json" />
+    <EmbeddedResource Include="Query\AuthUserDetail\GetSubIdByEmail.sql" />
+    <EmbeddedResource Include="Query\ChangePassword\ChangeAuthPassword.json" />
+    <EmbeddedResource Include="Query\ChangePassword\ChangeAuthPassword.sql" />
+    <EmbeddedResource Include="Query\Claim\ClaimUpdate.json" />
+    <EmbeddedResource Include="Query\Claim\ClaimUpdate.sql" />
+    <EmbeddedResource Include="Query\Assessment\AddAssessment.json" />
+    <EmbeddedResource Include="Query\Assessment\AddAssessment.sql" />
+    <EmbeddedResource Include="Query\AssessmentDetail\AddAssessmentDetails.json" />
+    <EmbeddedResource Include="Query\AssessmentDetail\AddAssessmentDetails.sql" />
+    <EmbeddedResource Include="Query\Assessment\GetAssessmentScore.json" />
+    <EmbeddedResource Include="Query\Assessment\GetAssessmentScore.sql" />
+    <EmbeddedResource Include="Query\Assessment\UpdateAssessmentScore.json" />
+    <EmbeddedResource Include="Query\Assessment\UpdateAssessmentScore.sql" />
+    <EmbeddedResource Include="Query\CompanyConfig\CompanyConfigInsert.json" />
+    <EmbeddedResource Include="Query\CompanyConfig\CompanyConfigInsert.sql" />
+    <EmbeddedResource Include="Query\Company\CompanyDelete.json" />
+    <EmbeddedResource Include="Query\Company\CompanyDelete.sql" />
+    <EmbeddedResource Include="Query\Company\CompanyUpdate.json" />
+    <EmbeddedResource Include="Query\Company\CompanyUpdate.sql" />
+    <EmbeddedResource Include="Query\Company\CreateSchema_ExternalTables.sql" />
+    <EmbeddedResource Include="Query\Company\CreateSchema_Functions.sql" />
+    <EmbeddedResource Include="Query\Company\CreateSchema_SPs.sql" />
+    <EmbeddedResource Include="Query\Company\CreateSchema_Tables.sql" />
+    <EmbeddedResource Include="Query\Company\CreateSchema_TablesTypes.sql" />
+    <EmbeddedResource Include="Query\Company\CreateSchema_Trigger.sql" />
+    <EmbeddedResource Include="Query\Company\CreateSchema_Views.sql" />
+    <EmbeddedResource Include="Query\Company\InsertDepartmentMaster.sql" />
+    <EmbeddedResource Include="Query\Company\InsertMasterData.sql" />
+    <EmbeddedResource Include="Query\DashBoard\GetTeamAssessmentYear.json" />
+    <EmbeddedResource Include="Query\DashBoard\GetTeamAssessmentYear.sql" />
+    <EmbeddedResource Include="Query\DashBoard\GetTeamListCount.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\DashBoard\GetTeamListCount.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\DashBoard\GetYearWiseTeamList.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\DashBoard\GetYearWiseTeamList.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\DashBoard\GetYearWiseTeamDashboard.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\DashBoard\GetYearWiseTeamDashboard.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\DashBoard\GetEmployeeDashboard.json" />
+    <EmbeddedResource Include="Query\DashBoard\GetEmployeeDashboard.sql" />
+    <EmbeddedResource Include="Query\Department\GetCompanyWiseDepartments.json" />
+    <EmbeddedResource Include="Query\Department\GetCompanyWiseDepartments.sql" />
+    <EmbeddedResource Include="Query\Department\GetCompanyAndYearWiseDepartments.json" />
+    <EmbeddedResource Include="Query\Department\GetCompanyAndYearWiseDepartments.sql" />
+    <EmbeddedResource Include="Query\DimensionMatrix\ActionwisePermissionSelectAll.json" />
+    <EmbeddedResource Include="Query\DimensionMatrix\ActionwisePermissionSelectAll.sql" />
+    <EmbeddedResource Include="Query\DimensionMatrix\ActionwisePermissionInsert.json" />
+    <EmbeddedResource Include="Query\DimensionMatrix\ActionwisePermissionInsert.sql" />
+    <EmbeddedResource Include="Query\DimensionMatrix\ActionwisePermission\GetActionWisePermission.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\DimensionMatrix\ActionwisePermission\GetActionWisePermission.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\DimensionMatrix\DimensionElementsInsert.json" />
+    <EmbeddedResource Include="Query\DimensionMatrix\DimensionElementsInsert.sql" />
+    <EmbeddedResource Include="Query\DimensionMatrix\DimensionElementsDelete.json" />
+    <EmbeddedResource Include="Query\DimensionMatrix\DimensionElementsDelete.sql" />
+    <EmbeddedResource Include="Query\DimensionMatrix\DimensionElementsUpdate.json" />
+    <EmbeddedResource Include="Query\DimensionMatrix\DimensionElementsUpdate.sql" />
+    <EmbeddedResource Include="Query\DimensionMatrix\DimensionElementsSelectAll.json" />
+    <EmbeddedResource Include="Query\DimensionMatrix\DimensionElementsSelectAll.sql" />
+    <EmbeddedResource Include="Query\DimensionMatrix\DimensionSelectAll.json" />
+    <EmbeddedResource Include="Query\DimensionMatrix\DimensionSelectAll.sql" />
+    <EmbeddedResource Include="Query\DimensionMatrix\DimensionUpdate.json" />
+    <EmbeddedResource Include="Query\DimensionMatrix\DimensionUpdate.sql" />
+    <EmbeddedResource Include="Query\DimensionMatrix\DimensionInsert.json" />
+    <EmbeddedResource Include="Query\DimensionMatrix\DimensionInsert.sql" />
+    <EmbeddedResource Include="Query\DimensionMatrix\GetAllActions.json" />
+    <EmbeddedResource Include="Query\DimensionMatrix\GetAllActions.sql" />
+    <EmbeddedResource Include="Query\EmailTemplate\GetTemplateByName.json" />
+    <EmbeddedResource Include="Query\EmailTemplate\GetTemplateByName.sql" />
+    <EmbeddedResource Include="Query\EmployeeProfile\UpdateOptForSMS.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\EmployeeProfile\UpdateOptForSMS.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\EmployeeProfile\EmployeeProfileUpdate.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\EmployeeProfile\EmployeeProfileUpdate.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\EmployeeUpdate.json" />
+    <EmbeddedResource Include="Query\Employee\EmployeeUpdate.sql" />
+    <EmbeddedResource Include="Query\Employee\GetAllCompanyAdminListWithoutPagination.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetAllCompanyAdminListWithoutPagination.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeeByManagerYearwiseWithoutPagination.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeeByManagerYearwiseWithoutPagination.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeesForActionByManager.json" />
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeesForActionByManager.sql" />
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeesForMail.json" />
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeesForMail.sql" />
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeesHierachyWithPagination.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeesHierachyWithPagination.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetAllOrgEmployeeYearwiseWithoutPagination.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetAllOrgEmployeeYearwiseWithoutPagination.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetAllNonManagers.json" />
+    <EmbeddedResource Include="Query\Employee\GetAllNonManagers.sql" />
+    <EmbeddedResource Include="Query\Employee\GetActiveManagerList.json" />
+    <EmbeddedResource Include="Query\Employee\GetActiveManagerList.sql" />
+    <EmbeddedResource Include="Query\Employee\GetAllOrgEmployeeYearwise.json" />
+    <EmbeddedResource Include="Query\Employee\GetAllOrgEmployeeYearwise.sql" />
+    <EmbeddedResource Include="Query\Employee\GetAspnetUserEmailList.json" />
+    <EmbeddedResource Include="Query\Employee\GetAspnetUserEmailList.sql" />
+    <EmbeddedResource Include="Query\Employee\GetOrgEmployeeByGradeYearwiseWithPagination.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetOrgEmployeeByGradeYearwiseWithPagination.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetOrgEmpByGradeAndMonthYearwiseWithoutPagination.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetOrgEmpByGradeAndMonthYearwiseWithoutPagination.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetOrgEmployeeByGradeYearwiseWithoutPagination.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetOrgEmployeeByGradeYearwiseWithoutPagination.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetEmployeeByGradeYearwiseWithPagination.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetEmployeeByGradeYearwiseWithPagination.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetManagersDetByManagerIds.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetManagersDetByManagerIds.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetEmployeeNotPartOfTeamByManagerId.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetEmployeeNotPartOfTeamByManagerId.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetOrgEmployeeByGradeAndMonthYearwise.json" />
+    <EmbeddedResource Include="Query\Employee\GetOrgEmployeeByGradeAndMonthYearwise.sql" />
+    <EmbeddedResource Include="Query\Employee\GetOversightTeamEmployeesByManagerId.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetOversightTeamEmployeesByManagerId.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetEmpTeamRelationByManagerId.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetEmpTeamRelationByManagerId.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetEmployeeDetailsByEmpIds.json" />
+    <EmbeddedResource Include="Query\Employee\GetEmployeeDetailsByEmpIds.sql" />
+    <EmbeddedResource Include="Query\Employee\GetYearwiseEmployeeWithHierachy.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetYearwiseEmployeeWithHierachy.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeeWithHierachy.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeeWithHierachy.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeeWithoutPagination.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeeWithoutPagination.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeeYearwiseWithoutPagination.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeeYearwiseWithoutPagination.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetAspNetUserCountByPhone.json" />
+    <EmbeddedResource Include="Query\Employee\GetAspNetUserCountByPhone.sql" />
+    <EmbeddedResource Include="Query\Employee\GetCompanyWiseEmployeeWithoutPagination.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetCompanyWiseEmployeeWithoutPagination.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetEmpByGradeAndMonthByManagerYearwiseWithoutPagination.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetEmpByGradeAndMonthByManagerYearwiseWithoutPagination.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetEmpByGradeAndMonthYearwiseWithoutPagination.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetEmpByGradeAndMonthYearwiseWithoutPagination.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetEmployee.json" />
+    <EmbeddedResource Include="Query\Employee\GetEmployee.sql" />
+    <EmbeddedResource Include="Query\Employee\GetEmployeeByEmpIdsForMails.json" />
+    <EmbeddedResource Include="Query\Employee\GetEmployeeByEmpIdsForMails.sql" />
+    <EmbeddedResource Include="Query\EmployeeProfile\EmployeeProfileSelect.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\EmployeeProfile\EmployeeProfileSelect.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetEmployeeByGradeByManagerYearwiseWithoutPagination.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetEmployeeByGradeByManagerYearwiseWithoutPagination.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetEmployeeByGradeYearwiseWithoutPagination.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\GetEmployeeByGradeYearwiseWithoutPagination.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Employee\UpdateEmpForIsMailSent.json" />
+    <EmbeddedResource Include="Query\Employee\UpdateEmpForIsMailSent.sql" />
+    <EmbeddedResource Include="Query\EmpProfile\EmpProfileUpdate.json" />
+    <EmbeddedResource Include="Query\EmpProfile\EmpProfileUpdate.sql" />
+    <EmbeddedResource Include="Query\EmpSalary\EmployeeSalaryUpdate.json" />
+    <EmbeddedResource Include="Query\EmpSalary\EmployeeSalaryUpdate.sql" />
+    <EmbeddedResource Include="Query\ExcelUpload\AddAuthClaimsFromCSV.json" />
+    <EmbeddedResource Include="Query\ExcelUpload\AddAuthClaimsFromCSV.sql" />
+    <EmbeddedResource Include="Query\ExcelUpload\AddAuthLoginFromCSV.json" />
+    <EmbeddedResource Include="Query\ExcelUpload\AddAuthLoginFromCSV.sql" />
+    <EmbeddedResource Include="Query\ExcelUpload\AddEmpolyeeFromCSV.json" />
+    <EmbeddedResource Include="Query\ExcelUpload\AddEmpolyeeFromCSV.sql" />
+    <EmbeddedResource Include="Query\ExcelUpload\AddUserLoginFromCSV.json" />
+    <EmbeddedResource Include="Query\ExcelUpload\AddUserLoginFromCSV.sql" />
+    <EmbeddedResource Include="Query\ExcelUpload\DeleteTempEmployee.json" />
+    <EmbeddedResource Include="Query\ExcelUpload\DeleteTempEmployee.sql" />
+    <EmbeddedResource Include="Query\ExcelUpload\GetCSVDataWithCount.json" />
+    <EmbeddedResource Include="Query\ExcelUpload\GetCSVDataWithCount.sql" />
+    <EmbeddedResource Include="Query\ExcelUpload\GetCSVNewEmployees.json" />
+    <EmbeddedResource Include="Query\ExcelUpload\GetCSVNewEmployees.sql" />
+    <EmbeddedResource Include="Query\ExcelUpload\GetEmployeeByPhoneNumberCatalog.json" />
+    <EmbeddedResource Include="Query\ExcelUpload\GetEmployeeByPhoneNumberCatalog.sql" />
+    <EmbeddedResource Include="Query\ExcelUpload\GetEmployeeByPhoneNumberTenant.json" />
+    <EmbeddedResource Include="Query\ExcelUpload\GetEmployeeByPhoneNumberTenant.sql" />
+    <EmbeddedResource Include="Query\ExcelUpload\GetExistingAuthUsers.json" />
+    <EmbeddedResource Include="Query\ExcelUpload\GetExistingAuthUsers.sql" />
+    <EmbeddedResource Include="Query\DashBoard\GetConnectionString.json" />
+    <EmbeddedResource Include="Query\DashBoard\GetConnectionString.sql" />
+    <EmbeddedResource Include="Query\DashBoard\GetTenantName.json" />
+    <EmbeddedResource Include="Query\DashBoard\GetTenantName.sql" />
+    <EmbeddedResource Include="Query\Employee\EmployeeInsert.json" />
+    <EmbeddedResource Include="Query\Employee\EmployeeInsert.sql" />
+    <EmbeddedResource Include="Query\AuthUserDetail\AuthUserDetailInsert.json" />
+    <EmbeddedResource Include="Query\AuthUserDetail\AuthUserDetailInsert.sql" />
+    <EmbeddedResource Include="Query\Login\DeleteDeviceByLoginUserId.json" />
+    <EmbeddedResource Include="Query\Login\DeleteDeviceByLoginUserId.sql" />
+    <EmbeddedResource Include="Query\Login\DeleteDeviceInfo.json" />
+    <EmbeddedResource Include="Query\Login\DeleteDeviceInfo.sql" />
+    <EmbeddedResource Include="Query\Login\Login.json" />
+    <EmbeddedResource Include="Query\Login\Login.sql" />
+    <EmbeddedResource Include="Query\Login\RegisterDevice.json" />
+    <EmbeddedResource Include="Query\Login\RegisterDevice.sql" />
+    <EmbeddedResource Include="Query\Notification\GetAllNotification.json" />
+    <EmbeddedResource Include="Query\Notification\GetAllNotification.sql" />
+    <EmbeddedResource Include="Query\Notification\UpdateNotificationMarkAsRead.json" />
+    <EmbeddedResource Include="Query\Notification\UpdateNotificationMarkAsRead.sql" />
+    <EmbeddedResource Include="Query\OrganizationType\OrganizationTypeSelectAll.sql" />
+    <EmbeddedResource Include="Query\Questionnaries\GetAllCategories.json" />
+    <EmbeddedResource Include="Query\Questionnaries\GetAllCategories.sql" />
+    <EmbeddedResource Include="Query\ScoreRanks\GetAllScoreRanks.json" />
+    <EmbeddedResource Include="Query\ScoreRanks\GetAllScoreRanks.sql" />
+    <EmbeddedResource Include="Query\SmsService\SmsServiceSelect.json" />
+    <EmbeddedResource Include="Query\SmsService\SmsServiceSelect.sql" />
+    <EmbeddedResource Include="Query\SmsService\SmsServiceInsert.json" />
+    <EmbeddedResource Include="Query\SmsService\SmsServiceInsert.sql" />
+    <EmbeddedResource Include="Query\Questionnaries\GetAllQuestionnaries.json" />
+    <EmbeddedResource Include="Query\Questionnaries\GetAllQuestionnaries.sql" />
+    <EmbeddedResource Include="Query\TeamConfiguration\DeleteTeamEmployees.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\DeleteTeamEmployees.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\DeleteTeamManagersByTeamId.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\DeleteTeamManagersByTeamId.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\GetAllTeamManagersByTeamId.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\GetAllTeamManagersByTeamId.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\SetTeamStatusInActive.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\SetTeamStatusInActive.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\DeleteTeamManagers.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\DeleteTeamManagers.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\UpdateTeamManagers.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\UpdateTeamManagers.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\UpdateTeamEmployees.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\UpdateTeamEmployees.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\UpdateTeamConfiguration.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\UpdateTeamConfiguration.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\AddTeamEmployees.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\AddTeamEmployees.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\AddTeamManagers.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\AddTeamManagers.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\AddTeamConfiguration.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\AddTeamConfiguration.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\GetTeamEmployeesByTeamId.json" />
+    <EmbeddedResource Include="Query\TeamConfiguration\GetTeamEmployeesByTeamId.sql" />
+    <EmbeddedResource Include="Query\TeamConfiguration\GetTeamManagersByTeamId.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\GetTeamManagersByTeamId.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\GetTeamDetailsById.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\GetTeamDetailsById.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\TeamConfigurationSelectAll.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\TeamConfiguration\TeamConfigurationSelectAll.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\Spark\GetSparkRejectionDetails.json" />
+    <EmbeddedResource Include="Query\Spark\GetSparkRejectionDetails.sql" />
+    <EmbeddedResource Include="Query\Spark\GetUnApprovedSparkCountByManager.json" />
+    <EmbeddedResource Include="Query\Spark\GetUnApprovedSparkCountByManager.sql" />
+    <EmbeddedResource Include="Query\Spark\UpdateSparkApprovalStatus.json" />
+    <EmbeddedResource Include="Query\Spark\UpdateSparkApprovalStatus.sql" />
+    <EmbeddedResource Include="Query\Spark\GetCompanyAdminList.json" />
+    <EmbeddedResource Include="Query\Spark\GetCompanyAdminList.sql" />
+    <EmbeddedResource Include="Query\Spark\GetUnApprovedSparkByManager.json" />
+    <EmbeddedResource Include="Query\Spark\GetUnApprovedSparkByManager.sql" />
+    <EmbeddedResource Include="Query\Spark\GetTriggerAdminList.json" />
+    <EmbeddedResource Include="Query\Spark\GetTriggerAdminList.sql" />
+    <EmbeddedResource Include="Query\Spark\EmployeeSparkSelect.json" />
+    <EmbeddedResource Include="Query\Spark\EmployeeSparkSelect.sql" />
+    <EmbeddedResource Include="Query\Spark\DeleteEmployeeSparkAttachment.json" />
+    <EmbeddedResource Include="Query\Spark\DeleteEmployeeSparkAttachment.sql" />
+    <EmbeddedResource Include="Query\Spark\DeleteEmployeeSparkDetails.json" />
+    <EmbeddedResource Include="Query\Spark\DeleteEmployeeSparkDetails.sql" />
+    <EmbeddedResource Include="Query\Spark\GetAspnetUserByPhoneNumber.json" />
+    <EmbeddedResource Include="Query\Spark\GetAspnetUserByPhoneNumber.sql" />
+    <EmbeddedResource Include="Query\Spark\GetEmployeeByEmployeeId.json" />
+    <EmbeddedResource Include="Query\Spark\GetEmployeeByEmployeeId.sql" />
+    <EmbeddedResource Include="Query\Spark\GetEmployeeSparkDetailsBySparkId.json" />
+    <EmbeddedResource Include="Query\Spark\GetEmployeeSparkDetailsBySparkId.sql" />
+    <EmbeddedResource Include="Query\Spark\GetEmployeeSparkDetails.json" />
+    <EmbeddedResource Include="Query\Spark\GetEmployeeSparkDetails.sql" />
+    <EmbeddedResource Include="Query\Spark\UpdateEmployeeSparkDetails.json" />
+    <EmbeddedResource Include="Query\Spark\UpdateEmployeeSparkDetails.sql" />
+    <EmbeddedResource Include="Query\Spark\AddEmployeeSparkDetails.json" />
+    <EmbeddedResource Include="Query\Spark\AddEmployeeSparkDetails.sql" />
+    <EmbeddedResource Include="Query\Spark\ClassificationSelectAll.json" />
+    <EmbeddedResource Include="Query\Spark\ClassificationSelectAll.sql" />
+    <EmbeddedResource Include="Query\UserDetail\AddUser.json" />
+    <EmbeddedResource Include="Query\UserDetail\AddUser.sql" />
+    <EmbeddedResource Include="Query\Claim\ClaimInsert.json" />
+    <EmbeddedResource Include="Query\Claim\ClaimInsert.sql" />
+    <EmbeddedResource Include="Query\Employee\EmployeeSelect.json" />
+    <EmbeddedResource Include="Query\Employee\EmployeeSelect.sql" />
+    <EmbeddedResource Include="Query\Employee\GetAllEmployee.json" />
+    <EmbeddedResource Include="Query\Employee\GetAllEmployee.sql" />
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeeByManager.json" />
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeeByManager.sql" />
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeeByManagerWithPagination.json" />
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeeByManagerWithPagination.sql" />
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeeByManagerYearwise.json" />
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeeByManagerYearwise.sql" />
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeeForTriggerAdmin.json" />
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeeForTriggerAdmin.sql" />
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeeForTriggerAdminWithPagination.json" />
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeeForTriggerAdminWithPagination.sql" />
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeeWithPagination.json" />
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeeWithPagination.sql" />
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeeYearwise.json" />
+    <EmbeddedResource Include="Query\Employee\GetAllEmployeeYearwise.sql" />
+    <EmbeddedResource Include="Query\Employee\GetCompanyName.json" />
+    <EmbeddedResource Include="Query\Employee\GetCompanyName.sql" />
+    <EmbeddedResource Include="Query\Employee\GetCompanyWiseEmployee.json" />
+    <EmbeddedResource Include="Query\Employee\GetCompanyWiseEmployee.sql" />
+    <EmbeddedResource Include="Query\Employee\GetCompanyWiseEmployeeWithPagination.json" />
+    <EmbeddedResource Include="Query\Employee\GetCompanyWiseEmployeeWithPagination.sql" />
+    <EmbeddedResource Include="Query\Employee\GetDeviceInfoById.json" />
+    <EmbeddedResource Include="Query\Employee\GetDeviceInfoById.sql" />
+    <EmbeddedResource Include="Query\Employee\GetEmployeeByGradeAndMonthByManagerYearwise.json" />
+    <EmbeddedResource Include="Query\Employee\GetEmployeeByGradeAndMonthByManagerYearwise.sql" />
+    <EmbeddedResource Include="Query\Employee\GetEmployeeByGradeAndMonthYearwise.json" />
+    <EmbeddedResource Include="Query\Employee\GetEmployeeByGradeAndMonthYearwise.sql" />
+    <EmbeddedResource Include="Query\Employee\GetEmployeeByGradeByManagerYearwise.json" />
+    <EmbeddedResource Include="Query\Employee\GetEmployeeByGradeByManagerYearwise.sql" />
+    <EmbeddedResource Include="Query\Employee\GetEmployeeByGradeYearwise.json" />
+    <EmbeddedResource Include="Query\Employee\GetEmployeeByGradeYearwise.sql" />
+    <EmbeddedResource Include="Query\Employee\GetNotificationById.json" />
+    <EmbeddedResource Include="Query\Employee\GetNotificationById.sql" />
+    <EmbeddedResource Include="Query\Employee\GetUserDetails.json" />
+    <EmbeddedResource Include="Query\Employee\GetUserDetails.sql" />
+    <EmbeddedResource Include="Query\Notification\UpdateNotificationFlagIsSent.json" />
+    <EmbeddedResource Include="Query\Notification\UpdateNotificationFlagIsSent.sql" />
+    <EmbeddedResource Include="Query\ExcelUpload\GetAllMastersForCSV.json" />
+    <EmbeddedResource Include="Query\ExcelUpload\GetAllMastersForCSV.sql" />
+    <EmbeddedResource Include="Query\Employee\GetEmployeeById.json" />
+    <EmbeddedResource Include="Query\Employee\GetEmployeeById.sql" />
+    <EmbeddedResource Include="Query\IndustryType\IndustryTypeSelectAll.json" />
+    <EmbeddedResource Include="Query\IndustryType\IndustryTypeSelectAll.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Query\AssessmentYear\GetAssessmentYear.json" />
+    <EmbeddedResource Include="Query\AssessmentYear\GetAssessmentYear.sql" />
+    <EmbeddedResource Include="Query\Company\CompanyInsert.json" />
+    <EmbeddedResource Include="Query\Company\CompanyInsert.sql" />
+    <EmbeddedResource Include="Query\Company\CompanySelectAll.json" />
+    <EmbeddedResource Include="Query\Company\CompanySelectAll.sql" />
+    <EmbeddedResource Include="Query\Company\CompanySelect.json" />
+    <EmbeddedResource Include="Query\Company\CompanySelect.sql" />
+    <EmbeddedResource Include="Query\Country\CountrySelectAll.json" />
+    <EmbeddedResource Include="Query\Country\CountrySelectAll.sql" />
+    <EmbeddedResource Include="Query\Department\DepartmentDelete.json" />
+    <EmbeddedResource Include="Query\Department\DepartmentDelete.sql" />
+    <EmbeddedResource Include="Query\DbConnection\DbConnectionSelect.json" />
+    <EmbeddedResource Include="Query\DbConnection\DbConnectionSelect.sql" />
+    <EmbeddedResource Include="Query\Department\DepartmentInsert.json" />
+    <EmbeddedResource Include="Query\Department\DepartmentInsert.sql" />
+    <EmbeddedResource Include="Query\Department\DepartmentSelectAll.json" />
+    <EmbeddedResource Include="Query\Department\DepartmentSelectAll.sql" />
+    <EmbeddedResource Include="Query\Department\DepartmentUpdate.json" />
+    <EmbeddedResource Include="Query\Department\DepartmentUpdate.sql" />
+    <EmbeddedResource Include="Query\Questionnaries\QuestionnariesSelectAll.json" />
+    <EmbeddedResource Include="Query\Questionnaries\QuestionnariesSelectAll.sql" />
+    <EmbeddedResource Include="Query\Ethnicity\EthnicitySelectAll.json" />
+    <EmbeddedResource Include="Query\Ethnicity\EthnicitySelectAll.sql" />
+    <EmbeddedResource Include="Query\Region\RegionSelectAll.json" />
+    <EmbeddedResource Include="Query\Region\RegionSelectAll.sql" />
+    <EmbeddedResource Include="Query\Role\RoleSelectAll.json" />
+    <EmbeddedResource Include="Query\Role\RoleSelectAll.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Query\Employee\DeleteEmployee.json" />
+    <EmbeddedResource Include="Query\Employee\DeleteEmployee.sql" />
+    <EmbeddedResource Include="Query\Employee\DeleteUser.json" />
+    <EmbeddedResource Include="Query\Employee\DeleteUser.sql" />
+    <EmbeddedResource Include="Query\UserDetail\UpdateUser.json" />
+    <EmbeddedResource Include="Query\UserDetail\UpdateUser.sql" />
+    <EmbeddedResource Include="Query\UserLogin\GetUserDetails.json" />
+    <EmbeddedResource Include="Query\UserLogin\GetUserDetails.sql" />
+    <EmbeddedResource Include="Query\WidgetLibrary\WidgetLibraryInsert.json" />
+    <EmbeddedResource Include="Query\WidgetLibrary\WidgetLibraryInsert.sql" />
+    <EmbeddedResource Include="Query\WidgetLibrary\GetUserwiseWidget.json" />
+    <EmbeddedResource Include="Query\WidgetLibrary\GetUserwiseWidget.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPPlus.Core" Version="1.5.4" />
+    <PackageReference Include="Hangfire" Version="1.6.21" />
+    <PackageReference Include="OneRPP.Restful.DAO" Version="0.0.1-Beta-1" />
+    <PackageReference Include="OneRPP.Restful.Services" Version="0.0.3-Beta-1" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Trigger.DTO\Trigger.DTO.csproj" />
+    <ProjectReference Include="..\Trigger.Utility\Trigger.Utility.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.Identity.Core">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.identity.core\2.1.1\lib\netstandard2.0\Microsoft.Extensions.Identity.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Query\EmployeeList\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Query\TeamConfiguration\GetTeamEmployeesByTeamId.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Query\TeamConfiguration\GetTeamEmployeesByTeamId.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

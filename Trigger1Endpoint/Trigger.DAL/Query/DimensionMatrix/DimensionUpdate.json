@@ -1,0 +1,23 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "Id",
+      "dataType": "int"
+    },
+    {
+      "key": "DimensionType",
+      "dataType": "varchar"
+    },
+    {
+      "key": "UpdatedBy",
+      "dataType": "int"
+    },
+    {
+      "key": "Result",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "InputOutput"
+    }
+  ]
+}

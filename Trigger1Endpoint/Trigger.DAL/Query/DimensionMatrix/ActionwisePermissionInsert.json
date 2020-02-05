@@ -1,0 +1,43 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "DimensionId",
+      "dataType": "smallint"
+    },
+    {
+      "key": "DimensionValueId",
+      "dataType": "varchar"
+    },
+    {
+      "key": "ActionId",
+      "dataType": "smallint"
+    },
+    {
+      "key": "CanView",
+      "dataType": "bit"
+    },
+    {
+      "key": "CanAdd",
+      "dataType": "bit"
+    },
+    {
+      "key": "CanEdit",
+      "dataType": "bit"
+    },
+    {
+      "key": "CanDelete",
+      "dataType": "bit"
+    },
+    {
+      "key": "CreatedBy",
+      "dataType": "int"
+    },
+    {
+      "key": "Result",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "InputOutput"
+    }
+  ]
+}

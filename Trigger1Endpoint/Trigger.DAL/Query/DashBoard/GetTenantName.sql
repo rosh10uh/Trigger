@@ -1,0 +1,1 @@
+SELECT DBName FROM CompanyDbConfig WHERE [CompanyId] = @CompanyId;

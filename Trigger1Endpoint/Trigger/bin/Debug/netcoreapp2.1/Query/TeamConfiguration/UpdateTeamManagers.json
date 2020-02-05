@@ -1,0 +1,23 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "TeamId",
+      "dataType": "int"
+    },
+    {
+      "key": "ManagerId",
+      "dataType": "int"
+    },
+    {
+      "key": "CreatedBy",
+      "dataType": "int"
+    },
+    {
+      "key": "Result",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Output"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "EmpId",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Input"
+    },
+    {
+      "key": "UpdatedBy",
+      "dataType": "VARCHAR",
+      "defaultValue": "0",
+      "Direction": "Input"
+    },
+    {
+      "key": "Result",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Output"
+    }
+  ]
+}

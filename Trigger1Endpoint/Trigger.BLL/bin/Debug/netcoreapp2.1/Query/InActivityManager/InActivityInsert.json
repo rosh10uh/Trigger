@@ -1,0 +1,43 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "Empid",
+      "dataType": "int"
+    },
+    {
+      "key": "FirstName",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "LastName",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "Email",
+      "dataType": "varchar"
+    },
+    {
+      "key": "SMSText",
+      "dataType": "varchar"
+    },
+    {
+      "key": "EmailText",
+      "dataType": "varchar"
+    },
+    {
+      "key": "InActivityDays",
+      "dataType": "int"
+    },
+    {
+      "key": "Createdby",
+      "dataType": "int"
+    },
+    {
+      "key": "Result",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "InputOutput"
+    }
+  ]
+}

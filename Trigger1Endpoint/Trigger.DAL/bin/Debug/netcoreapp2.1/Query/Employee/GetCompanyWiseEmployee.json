@@ -1,0 +1,9 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "CompanyId",
+      "dataType": "int"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "DeviceId",
+      "dataType": "varchar"
+    },
+    {
+      "key": "Result",
+      "dataType": "int",
+      "Direction": "Output"
+    }
+  ]
+}

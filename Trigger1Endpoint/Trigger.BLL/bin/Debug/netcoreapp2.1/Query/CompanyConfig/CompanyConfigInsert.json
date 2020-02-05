@@ -1,0 +1,39 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "companyid",
+      "dataType": "int"
+    },
+    {
+      "key": "companydomain",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "servername",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "dbname",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "username",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "password",
+      "dataType": "varchar"
+    },
+    {
+      "key": "createdBy",
+      "dataType": "int"
+    },
+    {
+      "key": "Result",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Output"
+    }
+  ]
+}

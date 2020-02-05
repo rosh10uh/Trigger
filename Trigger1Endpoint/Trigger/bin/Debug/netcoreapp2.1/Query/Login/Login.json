@@ -1,0 +1,13 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "UserName",
+      "dataType": "varchar"
+    },
+    {
+      "key": "Result",
+      "dataType": "varchar"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+C:\Roshan Patel\Trigger\QueryString\Trigger1Endpoint\Trigger.Utility\bin\Debug\netcoreapp2.0\Trigger.Utility.deps.json
+C:\Roshan Patel\Trigger\QueryString\Trigger1Endpoint\Trigger.Utility\bin\Debug\netcoreapp2.0\Trigger.Utility.dll
+C:\Roshan Patel\Trigger\QueryString\Trigger1Endpoint\Trigger.Utility\bin\Debug\netcoreapp2.0\Trigger.Utility.pdb
+C:\Roshan Patel\Trigger\QueryString\Trigger1Endpoint\Trigger.Utility\bin\Debug\netcoreapp2.0\Trigger.DTO.dll
+C:\Roshan Patel\Trigger\QueryString\Trigger1Endpoint\Trigger.Utility\bin\Debug\netcoreapp2.0\Trigger.DTO.pdb
+C:\Roshan Patel\Trigger\QueryString\Trigger1Endpoint\Trigger.Utility\obj\Debug\netcoreapp2.0\Trigger.Utility.csprojAssemblyReference.cache
+C:\Roshan Patel\Trigger\QueryString\Trigger1Endpoint\Trigger.Utility\obj\Debug\netcoreapp2.0\Trigger.Utility.csproj.CoreCompileInputs.cache
+C:\Roshan Patel\Trigger\QueryString\Trigger1Endpoint\Trigger.Utility\obj\Debug\netcoreapp2.0\Trigger.Utility.AssemblyInfoInputs.cache
+C:\Roshan Patel\Trigger\QueryString\Trigger1Endpoint\Trigger.Utility\obj\Debug\netcoreapp2.0\Trigger.Utility.AssemblyInfo.cs
+C:\Roshan Patel\Trigger\QueryString\Trigger1Endpoint\Trigger.Utility\obj\Debug\netcoreapp2.0\Trigger.Utility.csproj.CopyComplete
+C:\Roshan Patel\Trigger\QueryString\Trigger1Endpoint\Trigger.Utility\obj\Debug\netcoreapp2.0\Trigger.Utility.dll
+C:\Roshan Patel\Trigger\QueryString\Trigger1Endpoint\Trigger.Utility\obj\Debug\netcoreapp2.0\Trigger.Utility.pdb

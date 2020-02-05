@@ -1,0 +1,14 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "UserID",
+      "dataType": "int"
+    },
+    {
+      "key": "Result",
+      "dataType": "int",
+      "Direction": "Output"
+    }
+  ]
+}

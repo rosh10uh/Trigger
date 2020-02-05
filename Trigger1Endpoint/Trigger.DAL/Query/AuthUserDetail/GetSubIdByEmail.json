@@ -1,0 +1,9 @@
+{
+  "commandType": "sql",
+  "params": [
+    {
+      "key": "existingEmail",
+      "dataType": "VARCHAR"
+    }
+  ]
+}

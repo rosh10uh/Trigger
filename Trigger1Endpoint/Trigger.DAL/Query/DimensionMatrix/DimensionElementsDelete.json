@@ -1,0 +1,23 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "DimensionId",
+      "dataType": "smallint"
+    },
+    {
+      "key": "DimensionValueid",
+      "dataType": "int"
+    },
+    {
+      "key": "UpdatedBy",
+      "dataType": "int"
+    },
+    {
+      "key": "Result",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "InputOutput"
+    }
+  ]
+}

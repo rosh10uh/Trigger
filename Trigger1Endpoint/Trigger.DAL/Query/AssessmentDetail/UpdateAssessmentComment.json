@@ -1,0 +1,39 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "AssessmentId",
+      "dataType": "int"
+    },
+    {
+      "key": "RemarkId",
+      "dataType": "int"
+    },
+    {
+      "key": "Remarks",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "DocumentName",
+      "dataType": "varchar"
+    },
+    {
+      "key": "CloudFilePath",
+      "dataType": "varchar"
+    },
+    {
+      "key": "CommentUpdDateTime",
+      "dataType": "datetime"
+    },
+    {
+      "key": "UpdatedBy",
+      "dataType": "int"
+    },
+    {
+      "key": "Result",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Output"
+    }
+  ]
+}
