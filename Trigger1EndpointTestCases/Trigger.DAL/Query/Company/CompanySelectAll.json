@@ -1,0 +1,11 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "CompId",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Input"
+    }
+  ]
+}

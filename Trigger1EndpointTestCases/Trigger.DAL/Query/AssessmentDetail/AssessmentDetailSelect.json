@@ -1,0 +1,13 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "AssessmentId",
+      "dataType": "int"
+    },
+    {
+      "key": "RemarkId",
+      "dataType": "int"
+    }
+  ]
+}

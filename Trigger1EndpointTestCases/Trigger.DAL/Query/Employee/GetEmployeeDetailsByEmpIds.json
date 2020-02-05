@@ -1,0 +1,10 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "empIdList",
+      "dataType": "varchar",
+      "Direction": "Input"
+    }
+  ]
+}

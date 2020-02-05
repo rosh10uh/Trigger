@@ -1,0 +1,63 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "EmpId",
+      "dataType": "int"
+    },
+    {
+      "key": "SparkDate",
+      "dataType": "datetime"
+    },
+    {
+      "key": "SparkBy",
+      "dataType": "int"
+    },
+    {
+      "key": "CategoryId",
+      "dataType": "smallint"
+    },
+    {
+      "key": "ClassificationId",
+      "dataType": "int"
+    },
+    {
+      "key": "Remarks",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "DocumentName",
+      "dataType": "varchar"
+    },
+    {
+      "key": "CloudFilePath",
+      "dataType": "varchar"
+    },
+    {
+      "key": "ViaSms",
+      "dataType": "bit"
+    },
+    {
+      "key": "SenderPhoneNumber",
+      "dataType": "varchar"
+    },
+    {
+      "key": "CreatedBy",
+      "dataType": "int"
+    },
+    {
+      "key": "ApprovalStatus",
+      "dataType": "int"
+    },
+    {
+      "key": "ApprovalBy",
+      "dataType": "int"
+    },
+    {
+      "key": "Result",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Output"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+C:\Roshan Patel\Trigger\TestCases\18-11-2019\Trigger1Endpoint\Trigger.Utility\obj\Debug\netcoreapp2.0\Trigger.Utility.csprojAssemblyReference.cache
+C:\Roshan Patel\Trigger\TestCases\18-11-2019\Trigger1Endpoint\Trigger.Utility\obj\Debug\netcoreapp2.0\Trigger.Utility.csproj.CoreCompileInputs.cache
+C:\Roshan Patel\Trigger\TestCases\18-11-2019\Trigger1Endpoint\Trigger.Utility\obj\Debug\netcoreapp2.0\Trigger.Utility.AssemblyInfoInputs.cache
+C:\Roshan Patel\Trigger\TestCases\18-11-2019\Trigger1Endpoint\Trigger.Utility\obj\Debug\netcoreapp2.0\Trigger.Utility.AssemblyInfo.cs

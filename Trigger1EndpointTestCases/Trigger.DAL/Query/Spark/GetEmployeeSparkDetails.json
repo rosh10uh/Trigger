@@ -1,0 +1,9 @@
+{
+  "commandType": "sp",
+  "params": [
+   {
+      "key": "EmpId",
+      "dataType": "int"
+    }
+  ]
+}

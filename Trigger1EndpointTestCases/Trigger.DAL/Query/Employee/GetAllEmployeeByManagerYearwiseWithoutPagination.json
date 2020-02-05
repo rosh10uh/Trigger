@@ -1,0 +1,28 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "yearId",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Input"
+    },
+    {
+      "key": "companyId",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Input"
+    },
+    {
+      "key": "managerId",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Input"
+    },
+    {
+      "key": "departmentlist",
+      "dataType": "varchar",
+      "Direction": "Input"
+    }
+  ]
+}

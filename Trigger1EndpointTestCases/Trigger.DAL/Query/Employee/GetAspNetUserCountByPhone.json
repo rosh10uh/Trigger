@@ -1,0 +1,13 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "Email",
+      "dataType": "varchar"
+    },
+    {
+      "key": "phoneNumber",
+      "dataType": "varchar"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "companyid",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Input"
+    }
+      ]
+}

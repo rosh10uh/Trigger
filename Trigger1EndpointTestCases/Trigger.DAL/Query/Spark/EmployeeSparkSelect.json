@@ -1,0 +1,13 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "SparkId",
+      "dataType": "int"
+    },
+    {
+      "key": "EmpId",
+      "dataType": "int"
+    }
+  ]
+}

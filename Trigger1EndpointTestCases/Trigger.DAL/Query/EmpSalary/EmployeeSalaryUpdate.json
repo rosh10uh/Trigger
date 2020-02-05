@@ -1,0 +1,27 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "EmpId",
+      "dataType": "int"
+    },
+    {
+      "key": "CompanyId",
+      "dataType": "int"
+    },
+    {
+      "key": "CurrentSalary",
+      "dataType": "decimal"
+    },
+    {
+      "key": "UpdatedBy",
+      "dataType": "int"
+    },
+    {
+      "key": "Result",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Output"
+    }
+  ]
+}

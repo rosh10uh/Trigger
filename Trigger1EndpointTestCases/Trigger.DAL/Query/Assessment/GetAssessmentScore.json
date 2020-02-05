@@ -1,0 +1,15 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "CompanyId",
+      "dataType": "int",
+      "defaultValue": "0"
+    },
+    {
+      "key": "EmpId",
+      "dataType": "int",
+      "defaultValue": "0"
+    }
+  ]
+}

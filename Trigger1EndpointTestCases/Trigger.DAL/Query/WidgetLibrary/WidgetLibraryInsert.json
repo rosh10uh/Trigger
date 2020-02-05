@@ -1,0 +1,38 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "UserId",
+      "dataType": "int"
+    },
+    {
+      "key": "WidgetId",
+      "dataType": "int"
+    },
+    {
+      "key": "SequenceNumber",
+      "dataType": "int"
+    },
+    {
+      "key": "TileSequence",
+      "dataType": "int"
+    },
+    {
+      "key": "Position",
+      "dataType": "decimal"
+    },
+    {
+      "key": "IsActive",
+      "dataType": "bit"
+    },
+    {
+      "key": "CreatedBy",
+      "dataType": "int"
+    },
+    {
+      "key": "Result",
+      "dataType": "int",
+      "Direction": "Output"
+    }
+  ]
+}

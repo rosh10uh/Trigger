@@ -1,0 +1,39 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "EmpId",
+      "dataType": "int"
+    },
+    {
+      "key": "AssessmentDate",
+      "dataType": "datetime"
+    },
+    {
+      "key": "AssessmentBy",
+      "dataType": "int"
+    },
+    {
+      "key": "Remarks",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "DocumentName",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "CloudFilePath",
+      "dataType": "varchar"
+    },
+    {
+      "key": "CreatedBy",
+      "dataType": "int"
+    },
+    {
+      "key": "Id",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Output"
+    }
+  ]
+}

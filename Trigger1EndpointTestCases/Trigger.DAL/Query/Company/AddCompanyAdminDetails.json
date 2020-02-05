@@ -1,0 +1,159 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "EmpId",
+      "dataType": "varchar"
+    },
+    {
+      "key": "EmployeeId",
+      "dataType": "varchar"
+    },
+    {
+      "key": "CompanyId",
+      "dataType": "int"
+    },
+    {
+      "key": "FirstName",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "MiddleName",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "LastName",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "Suffix",
+      "dataType": "varchar"
+    },
+    {
+      "key": "Email",
+      "dataType": "varchar"
+    },
+    {
+      "key": "JobTitle",
+      "dataType": "varchar"
+    },
+    {
+      "key": "JoiningDate",
+      "dataType": "date"
+    },
+    {
+      "key": "WorkCity",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "WorkState",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "WorkZipcode",
+      "dataType": "varchar"
+    },
+    {
+      "key": "DepartmentId",
+      "dataType": "smallint"
+    },
+    {
+      "key": "ManagerId",
+      "dataType": "int"
+    },
+    {
+      "key": "ManagerFName",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "ManagerLName",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "EmpStatus",
+      "dataType": "bit"
+    },
+    {
+      "key": "RoleId",
+      "dataType": "tinyint"
+    },
+    {
+      "key": "DateOfBirth",
+      "dataType": "date"
+    },
+    {
+      "key": "RaceOrEthanicityId",
+      "dataType": "smallint"
+    },
+    {
+      "key": "JobGroupId",
+      "dataType": "smallint"
+    },
+    {
+      "key": "JobGroup",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "Gender",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "JobCategoryId",
+      "dataType": "smallint"
+    },
+    {
+      "key": "JobCategory",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "EmpLocation",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "JobCodeId",
+      "dataType": "smallint"
+    },
+    {
+      "key": "JobCode",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "LastPromoDate",
+      "dataType": "date"
+    },
+    {
+      "key": "CurrentSalary",
+      "dataType": "decimal"
+    },
+    {
+      "key": "LastIncDate",
+      "dataType": "date"
+    },
+    {
+      "key": "CountryId",
+      "dataType": "int"
+    },
+    {
+      "key": "RegionId",
+      "dataType": "int"
+    },
+    {
+      "key": "EmpImgPath",
+      "dataType": "varchar"
+    },
+    {
+      "key": "PhoneNumber",
+      "dataType": "varchar"
+    },
+    {
+      "key": "CreatedBy",
+      "dataType": "int"
+    },
+    {
+      "key": "@resultid",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Output"
+    }
+  ]
+}

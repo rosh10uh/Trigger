@@ -1,0 +1,17 @@
+{
+  "commandType": "sql",
+  "params": [
+    {
+      "key": "ClaimType",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "ClaimValue",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "AuthUserId",
+      "dataType": "nvarchar"
+    }
+  ]
+}

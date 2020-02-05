@@ -1,0 +1,21 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "TeamId",
+      "dataType": "int",
+      "Direction": "Input"
+    },
+    {
+      "key": "UpdatedBy",
+      "dataType": "int",
+      "Direction": "Input"
+    },
+    {
+      "key": "Result",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Output"
+    }
+  ]
+}

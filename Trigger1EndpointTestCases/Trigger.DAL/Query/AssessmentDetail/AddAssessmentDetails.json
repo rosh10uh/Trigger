@@ -1,0 +1,35 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "AssessmentId",
+      "dataType": "int"
+    },
+    {
+      "key": "QuestionId",
+      "dataType": "int"
+    },
+    {
+      "key": "AnswerId",
+      "dataType": "int"
+    },
+    {
+      "key": "Remarks",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "KpiStatus",
+      "dataType": "int"
+    },
+    {
+      "key": "CreatedBy",
+      "dataType": "int"
+    },
+    {
+      "key": "Result",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Output"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "sparkId",
+      "dataType": "int"
+    },
+    {
+      "key": "approvalStatus",
+      "dataType": "int"
+    },
+    {
+      "key": "rejectionRemark",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "approvalBy",
+      "dataType": "int"
+    },
+    {
+      "key": "Result",
+      "dataType": "int",
+      "defaultValue": "0",
+      "Direction": "Output"
+    }
+  ]
+}

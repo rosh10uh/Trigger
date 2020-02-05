@@ -1,0 +1,62 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "UserName",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "Email",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "EmailConfirmed",
+      "dataType": "bit"
+    },
+    {
+      "key": "PasswordHash",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "PhoneNumber",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "PhoneNumberConfirmed",
+      "dataType": "bit"
+    },
+    {
+      "key": "NormalizedEmail",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "SecurityStamp",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "NormalizedUserName",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "ConcurrencyStamp",
+      "dataType": "nvarchar"
+    },
+    {
+      "key": "LockoutEnd",
+      "dataType": "DateTimeOffset"
+    },
+    {
+      "key": "LockoutEnabled",
+      "dataType": "bit"
+    },
+    {
+      "key": "Id",
+      "dataType": "nvarchar",
+      "Direction": "Output"
+    },
+    {
+      "key": "TwoFactorEnabled",
+      "dataType": "bit"
+    }
+  ]
+}

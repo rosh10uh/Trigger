@@ -1,0 +1,13 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "companyId",
+      "dataType": "int"
+    },
+    {
+      "key": "templateName",
+      "dataType": "varchar"
+    }
+  ]
+}

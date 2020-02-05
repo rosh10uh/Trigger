@@ -1,0 +1,9 @@
+{
+  "commandType": "sp",
+  "params": [
+    {
+      "key": "tblAuthClaims",
+      "dataType": "Structured"
+    }
+  ]
+}
